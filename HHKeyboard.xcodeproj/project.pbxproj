@@ -117,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				35CF76282675911A00F4ED47 /* Resources */,
-				35CF75F72673C2C200F4ED47 /* Class */,
+				35CF75F72673C2C200F4ED47 /* Classes */,
 				35CF75DE2673C2B900F4ED47 /* AppDelegate.h */,
 				35CF75DF2673C2B900F4ED47 /* AppDelegate.m */,
 				35CF75E12673C2B900F4ED47 /* SceneDelegate.h */,
@@ -133,7 +133,7 @@
 			path = HHKeyboard;
 			sourceTree = "<group>";
 		};
-		35CF75F72673C2C200F4ED47 /* Class */ = {
+		35CF75F72673C2C200F4ED47 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				359882002679DA5000CB494A /* HHKeyboardConfiguration.h */,
@@ -171,7 +171,7 @@
 				35CF763D2676852000F4ED47 /* UIColor+HHKeyboard.h */,
 				35CF763E2676852000F4ED47 /* UIColor+HHKeyboard.m */,
 			);
-			path = Class;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		35CF76282675911A00F4ED47 /* Resources */ = {

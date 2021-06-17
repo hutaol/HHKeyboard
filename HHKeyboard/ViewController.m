@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "HHKeyboardView.h"
 #import "HHKeyboardHelper.h"
+#import "UIColor+HHKeyboard.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate, HHKeyboardViewDelegate>
 

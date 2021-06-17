@@ -163,7 +163,6 @@
 
 - (void)keyboardWillChange:(NSNotification *)noti {
     CGFloat height = [[[noti userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size.height;
-    NSLog(@"keyboardWillChange: %f", height);
 
     if (noti.name == UIKeyboardWillShowNotification) {
         self.currentState = HHKeyboardStateKeyboard;
@@ -381,7 +380,6 @@
 }
 
 - (void)p_changeHeight:(CGFloat)height {
-    NSLog(@"%lf", height);
     if (self.delegate && [self.delegate respondsToSelector:@selector(keyboard:didChangeHeight:)]) {
         [self.delegate keyboard:self didChangeHeight:height];
     }
@@ -671,7 +669,6 @@
         _textView = [[HHKeyboardTextView alloc] init];
         _textView.delegate = self;
         _initialHeight = ceilf([self.textView sizeThatFits:CGSizeMake(0, MAXFLOAT)].height);
-        NSLog(@"InitialHeight: %lf", _initialHeight);
     }
     return _textView;
 }
