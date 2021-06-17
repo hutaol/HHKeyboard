@@ -31,34 +31,35 @@ typedef NS_ENUM(NSInteger, HHKeyboardVoiceState) {
 
 @protocol HHKeyboardViewDelegate <NSObject>
 
+@optional
 /// 高度改变
-/// @param keyboard HHKeyBoardView
+/// @param keyboard HHKeyboardView
 /// @param height 高度
 - (void)keyboard:(HHKeyboardView *)keyboard didChangeHeight:(CGFloat)height;
 
 /// 点击更多Item
-/// @param keyboard HHKeyBoardView
-/// @param moreItem HHKeyBoardMoreItem
+/// @param keyboard HHKeyboardView
+/// @param moreItem HHKeyboardMoreItem
 - (void)keyboard:(HHKeyboardView *)keyboard didSelectMoreItem:(HHKeyboardMoreItem *)moreItem;
 
 /// 录音状态
-/// @param keyboard HHKeyBoardView
+/// @param keyboard HHKeyboardView
 /// @param state 录音状态
 - (void)keyboard:(HHKeyboardView *)keyboard voiceState:(HHKeyboardVoiceState)state;
 
 
 /// 除含有 @ 字符的委托（比如删除 @xxx）
-/// @param keyboard HHKeyBoardView
+/// @param keyboard HHKeyboardView
 /// @param text atText
 - (void)keyboard:(HHKeyboardView *)keyboard didDeleteAt:(NSString *)text;
 
 /// 输入含有 @ 字符的委托
-/// @param keyboard HHKeyBoardView
+/// @param keyboard HHKeyboardView
 - (void)keyboardDidInputAt:(HHKeyboardView *)keyboard;
 
 
 /// 发送文本消息时的回调委托
-/// @param keyboard HHKeyBoardView
+/// @param keyboard HHKeyboardView
 /// @param text 文本消息
 - (void)keyboard:(HHKeyboardView *)keyboard sendText:(NSString *)text;
 

@@ -91,7 +91,7 @@
 - (void)updateTableViewInsets {
     CGFloat bottom = CGRectGetMaxY(self.view.frame) - CGRectGetMinY(self.keyboardView.frame) - [HHKeyboardHelper kb_bottomSafeHeight];
 
-    UIEdgeInsets insets = UIEdgeInsetsMake(self.topLayoutGuide.length, 0.0f, bottom, 0.0f);
+    UIEdgeInsets insets = UIEdgeInsetsMake(0.f, 0.f, bottom, 0.f);
     self.tableView.contentInset = insets;
     self.tableView.scrollIndicatorInsets = insets;
 //    [self scrollToBottom:YES];
