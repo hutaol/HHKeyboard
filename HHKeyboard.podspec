@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "HHKeyboard"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A short description of HHKeyboard."
   spec.description  = <<-DESC
 TODO: Add long description of the pod here.
