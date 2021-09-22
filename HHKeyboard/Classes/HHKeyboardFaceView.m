@@ -26,12 +26,18 @@
 
 @implementation HHKeyboardFaceView
 
+#pragma mark - HHKeyboardProtocol
+
 - (CGFloat)keyboardHeight {
     return 220 + [HHKeyboardHelper kb_bottomSafeHeight];
 }
 
-- (void)reset {
-    [super reset];
+- (void)keyboardShow {
+    [self.collectionView reloadData];
+}
+
+- (void)reset:(CGFloat)width {
+    [super reset:width];
     [self.collectionView reloadData];
 }
 

@@ -14,11 +14,13 @@
 {
     self = [super init];
     if (self) {
+        _lineColor = [UIColor kb_colorWithLightColor:[UIColor kb_colorWithString:@"#EAEAEA"] darkColor:[UIColor kb_colorWithString:@"#555555"]];
+        
         _bgColor = [UIColor kb_colorWithLightColor:[UIColor kb_colorWithString:@"#FAFAFA"] darkColor:[UIColor blackColor]];
         
-        _borderColor = [UIColor kb_colorWithLightColor:[UIColor kb_colorWithString:@"#E0E0E0"] darkColor:[UIColor kb_colorWithString:@"#111111"]];
+        _borderColor = [UIColor kb_colorWithLightColor:[UIColor kb_colorWithString:@"#EAEAEA"] darkColor:[UIColor kb_colorWithString:@"#555555"]];
         
-        _inputColor = [UIColor kb_colorWithLightColor:[UIColor whiteColor] darkColor:[UIColor kb_colorWithString:@"#222222"]];
+        _inputColor = [UIColor kb_colorWithLightColor:[UIColor whiteColor] darkColor:[UIColor kb_colorWithString:@"#101010"]];
         
         _textColor = [UIColor kb_colorWithLightColor:[UIColor blackColor] darkColor:[UIColor whiteColor]];
         

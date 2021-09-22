@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "HHKeyboard"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A short description of HHKeyboard."
   spec.description  = <<-DESC
 TODO: Add long description of the pod here.
@@ -20,12 +20,12 @@ TODO: Add long description of the pod here.
   spec.license      = "MIT"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "henry" => "1325049637@qq.com" }
-  spec.platform     = :ios
+  spec.ios.deployment_target = '9.0'
 
   spec.source       = { :git => "https://github.com/hutaol/HHKeyboard.git", :tag => "#{spec.version}" }
 
-  spec.source_files = "HHKeyboard/Classes/*.{h,m}"
-  spec.resources    = 'HHKeyboard/Resources/*.{png,xib,nib,bundle}'
+  spec.source_files = "HHKeyboard/Classes/*"
+  spec.resources    = 'HHKeyboard/Resources/*'
 
   spec.requires_arc = true
 

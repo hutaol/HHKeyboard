@@ -73,14 +73,14 @@
 }
 
 - (void)p_initImage {
-    kVoiceImage = [HHKeyboardResources getImageFromKeyboard:@"icon_keyboard_voice_nor"];
-    kVoiceImageHL = [HHKeyboardResources getImageFromKeyboard:@"icon_keyboard_voice_press"];
-    kFaceImage = [HHKeyboardResources getImageFromKeyboard:@"icon_keyboard_face_nor"];
-    kFaceImageHL = [HHKeyboardResources getImageFromKeyboard:@"icon_keyboard_face_press"];
-    kMoreImage = [HHKeyboardResources getImageFromKeyboard:@"icon_keyboard_add_nor"];
-    kMoreImageHL = [HHKeyboardResources getImageFromKeyboard:@"icon_keyboard_add_press"];
-    kKeyboardImage = [HHKeyboardResources getImageFromKeyboard:@"icon_keyboard_keyboard_nor"];
-    kKeyboardImageHL = [HHKeyboardResources getImageFromKeyboard:@"icon_keyboard_keyboard_press"];
+    kVoiceImage = [UIImage imageNamed:@"icon_keyboard_voice_nor"];
+    kVoiceImageHL = [UIImage imageNamed:@"icon_keyboard_voice_press"];
+    kFaceImage = [UIImage imageNamed:@"icon_keyboard_face_nor"];
+    kFaceImageHL = [UIImage imageNamed:@"icon_keyboard_face_press"];
+    kMoreImage = [UIImage imageNamed:@"icon_keyboard_add_nor"];
+    kMoreImageHL = [UIImage imageNamed:@"icon_keyboard_add_press"];
+    kKeyboardImage = [UIImage imageNamed:@"icon_keyboard_keyboard_nor"];
+    kKeyboardImageHL = [UIImage imageNamed:@"icon_keyboard_keyboard_press"];
 }
 
 - (void)p_init {
@@ -119,8 +119,8 @@
 
 - (void)defautLayout {
     
-    CGFloat width = self.frame.size.width;
-    
+    CGFloat width = self.frame.size.width - [HHKeyboardHelper kb_safeAreaInset].left - [HHKeyboardHelper kb_safeAreaInset].right;
+
     self.textViewWidth = width - (5 * kHorizenSpace ) - (3 * _initialHeight);
     CGFloat vHeight = self.textViewHeight;
     if (self.currentState == HHKeyboardStateVoice) {
@@ -128,14 +128,14 @@
     }
     
     if (self.showVoice) {
-        self.voiceButton.frame = CGRectMake(kHorizenSpace, vHeight + kVerticalSpace - _initialHeight, _initialHeight, _initialHeight);
+        self.voiceButton.frame = CGRectMake(kHorizenSpace + [HHKeyboardHelper kb_safeAreaInset].left, vHeight + kVerticalSpace - _initialHeight, _initialHeight, _initialHeight);
     } else {
         self.voiceButton.frame = CGRectZero;
         self.textViewWidth += (_initialHeight + kHorizenSpace);
     }
 
     if (self.showMore) {
-        self.moreButton.frame = CGRectMake(width - kHorizenSpace - _initialHeight, vHeight + kVerticalSpace - _initialHeight, _initialHeight, _initialHeight);
+        self.moreButton.frame = CGRectMake(width + [HHKeyboardHelper kb_safeAreaInset].left - kHorizenSpace - _initialHeight, vHeight + kVerticalSpace - _initialHeight, _initialHeight, _initialHeight);
     } else {
         self.moreButton.frame = CGRectZero;
         self.textViewWidth += (_initialHeight + kHorizenSpace);
@@ -143,9 +143,9 @@
 
     if (self.showFace) {
         if (self.showMore) {
-            self.faceButton.frame = CGRectMake(width - (kHorizenSpace + _initialHeight) * 2, vHeight + kVerticalSpace - _initialHeight, _initialHeight, _initialHeight);
+            self.faceButton.frame = CGRectMake(width + [HHKeyboardHelper kb_safeAreaInset].left - (kHorizenSpace + _initialHeight) * 2, vHeight + kVerticalSpace - _initialHeight, _initialHeight, _initialHeight);
         } else {
-            self.faceButton.frame = CGRectMake(width - kHorizenSpace - _initialHeight, vHeight + kVerticalSpace - _initialHeight, _initialHeight, _initialHeight);
+            self.faceButton.frame = CGRectMake(width + [HHKeyboardHelper kb_safeAreaInset].left - kHorizenSpace - _initialHeight, vHeight + kVerticalSpace - _initialHeight, _initialHeight, _initialHeight);
         }
     } else {
         self.faceButton.frame = CGRectZero;
@@ -197,14 +197,19 @@
 }
 
 - (void)configLayout:(CGSize)size {
-    CGFloat height = self.superview.frame.size.height - self.frame.origin.y;
+    CGFloat height = [HHKeyboardHelper kb_bottomSafeHeight];
+    if (self.currentState == HHKeyboardStateMore) {
+        [self.moreView reset:size.width];
+        height = self.moreView.keyboardHeight;
+    } else if (self.currentState == HHKeyboardStateFace) {
+        [self.faceView reset:size.width];
+        height = self.faceView.keyboardHeight;
+    }
+    
+    height = [self p_textBarHeight] + height;
+    
     self.frame = CGRectMake(0, size.height - height, size.width, height);
     [self defautLayout];
-    if (self.currentState == HHKeyboardStateMore) {
-        [self.moreView reset];
-    } else if (self.currentState == HHKeyboardStateFace) {
-        [self.faceView reset];
-    }
 }
 
 - (void)resetFrame {
@@ -640,13 +645,20 @@
     [self defautLayout];
 }
 
+- (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
+    [super traitCollectionDidChange:previousTraitCollection];
+    self.textView.layer.borderColor = self.configuration.borderColor.CGColor;
+    self.recordButton.layer.borderColor = self.configuration.borderColor.CGColor;
+}
+
 - (void)setConfiguration:(HHKeyboardConfiguration *)configuration {
     _configuration = configuration;
     self.backgroundColor = configuration.bgColor;
     
-    self.topLineView.backgroundColor = configuration.borderColor;
+    self.topLineView.backgroundColor = configuration.lineColor;
     
     self.textView.backgroundColor = configuration.inputColor;
+    
     self.textView.layer.borderColor = configuration.borderColor.CGColor;
     
     self.recordButton.layer.borderColor = configuration.borderColor.CGColor;

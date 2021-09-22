@@ -6,8 +6,6 @@
 //
 
 #import "HHKeyboardResources.h"
-#import "HHKeyboardFaceItem.h"
-#import "HHKeyboardFaceGroup.h"
 
 @implementation HHKeyboardResources
 
@@ -20,22 +18,6 @@
         resourceBundle = [NSBundle bundleWithPath:bundlePath];
     }
     return [[resourceBundle ?: bundle resourcePath] stringByAppendingPathComponent:name];
-}
-
-+ (NSString *)getPathWithKeyboard:(NSString *)name {
-    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-    NSURL *bundleURL = [bundle URLForResource:@"HHKeyboard" withExtension:@"bundle"];
-    NSBundle *resourceBundle = [NSBundle bundleWithURL:bundleURL];
-    if (!resourceBundle) {
-        NSString *bundlePath = [bundle.resourcePath stringByAppendingPathComponent:@"HHKeyboard.bundle"];
-        resourceBundle = [NSBundle bundleWithPath:bundlePath];
-    }
-    return [[resourceBundle ?: bundle resourcePath] stringByAppendingPathComponent:name];
-}
-
-+ (UIImage *)getImageFromKeyboard:(NSString *)name {
-    NSString *path = [self getPathWithKeyboard:name];
-    return [UIImage imageWithContentsOfFile:path];
 }
 
 + (UIImage *)getImageFromFace:(NSString *)name {

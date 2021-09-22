@@ -65,7 +65,12 @@
         // 竖屏布局
     }
     
-    [self.keyboardView configLayout:size];
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+        
+        [self.keyboardView configLayout:size];
+        
+    } completion:nil];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

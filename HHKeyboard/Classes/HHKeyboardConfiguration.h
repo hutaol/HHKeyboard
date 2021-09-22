@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HHKeyboardConfiguration : NSObject
 
+@property (nonatomic, strong) UIColor *lineColor;
+
 @property (nonatomic, strong) UIColor *bgColor;
 @property (nonatomic, strong) UIColor *borderColor;
 

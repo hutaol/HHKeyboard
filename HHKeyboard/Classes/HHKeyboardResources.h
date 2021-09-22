@@ -6,15 +6,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HHKeyboardFaceItem.h"
+#import "HHKeyboardFaceGroup.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HHKeyboardResources : NSObject
 
 + (NSString *)getPathWithFace:(NSString *)name;
-+ (NSString *)getPathWithKeyboard:(NSString *)name;
 
-+ (UIImage *)getImageFromKeyboard:(NSString *)name;
 + (UIImage *)getImageFromFace:(NSString *)name;
 
 + (NSMutableArray *)defaultFaceData;

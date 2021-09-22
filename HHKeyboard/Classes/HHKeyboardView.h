@@ -96,7 +96,8 @@ typedef NS_ENUM(NSInteger, HHKeyboardVoiceState) {
 /// 添加后作为聊天框时最好设置，展示在底部的输入框
 - (void)resetFrame;
 
-/// 设置Frame，用于屏幕旋转
+/// 配置布局，父视图尺寸改变时，可用于屏幕选中
+/// @param size 父视图尺寸
 - (void)configLayout:(CGSize)size;
 
 - (void)setMoreItems:(NSMutableArray <HHKeyboardMoreItem *> *)items;

@@ -40,6 +40,11 @@
     if (animation) {
         [UIView animateWithDuration:0.25 animations:^{
             self.frame = rect;
+            
+            if ([self respondsToSelector:@selector(keyboardShow)]) {
+                [self keyboardShow];
+            }
+            
         } completion:^(BOOL finished) {
             if (self.keyboardDelegate && [self.keyboardDelegate respondsToSelector:@selector(keyboardDidShow:animated:)]) {
                 [self.keyboardDelegate keyboardDidShow:self animated:animation];
@@ -47,6 +52,11 @@
         }];
     } else {
         self.frame = rect;
+        
+        if ([self respondsToSelector:@selector(keyboardShow)]) {
+            [self keyboardShow];
+        }
+        
         if (self.keyboardDelegate && [self.keyboardDelegate respondsToSelector:@selector(keyboardDidShow:animated:)]) {
             [self.keyboardDelegate keyboardDidShow:self animated:animation];
         }
@@ -77,6 +87,11 @@
     if (animation) {
         [UIView animateWithDuration:0.25 animations:^{
             self.frame = rect;
+            
+            if ([self respondsToSelector:@selector(keyboardDismiss)]) {
+                [self keyboardDismiss];
+            }
+            
         } completion:^(BOOL finished) {
             [self removeFromSuperview];
             if (self.keyboardDelegate && [self.keyboardDelegate respondsToSelector:@selector(keyboardDidDismiss:animated:)]) {
@@ -85,6 +100,11 @@
         }];
     } else {
         self.frame = CGRectMake(0, 0, 0, 0);
+
+        if ([self respondsToSelector:@selector(keyboardDismiss)]) {
+            [self keyboardDismiss];
+        }
+        
         [self removeFromSuperview];
         
         if (self.keyboardDelegate && [self.keyboardDelegate respondsToSelector:@selector(keyboardDidDismiss:animated:)]) {
@@ -93,9 +113,10 @@
     }
 }
 
-- (void)reset {
+- (void)reset:(CGFloat)width {
     CGRect rect = self.frame;
-    rect.size.width = self.superview.frame.size.width;
+    rect.size.width = width;
+    rect.size.height = [self keyboardHeight];
     self.frame = rect;
 }
 

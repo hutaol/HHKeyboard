@@ -29,10 +29,10 @@
 		35CF762426751B8000F4ED47 /* HHKeyboardTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CF762326751B8000F4ED47 /* HHKeyboardTextView.m */; };
 		35CF762726758E6A00F4ED47 /* HHKeyboardFaceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CF762626758E6A00F4ED47 /* HHKeyboardFaceItem.m */; };
 		35CF762B267592F500F4ED47 /* HHFace.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35CF7629267592F400F4ED47 /* HHFace.bundle */; };
-		35CF76312675958D00F4ED47 /* HHKeyboard.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35CF76302675958D00F4ED47 /* HHKeyboard.bundle */; };
 		35CF7633267595A800F4ED47 /* HHKeyboardResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CF7632267595A800F4ED47 /* HHKeyboardResources.m */; };
 		35CF763926764AC000F4ED47 /* UIButton+HHKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CF763826764AC000F4ED47 /* UIButton+HHKeyboard.m */; };
 		35CF763F2676852000F4ED47 /* UIColor+HHKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CF763E2676852000F4ED47 /* UIColor+HHKeyboard.m */; };
+		35E01DA526FB192C009AE694 /* HHKeyboard.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E01DA426FB192C009AE694 /* HHKeyboard.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,12 +78,12 @@
 		35CF762626758E6A00F4ED47 /* HHKeyboardFaceItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHKeyboardFaceItem.m; sourceTree = "<group>"; };
 		35CF7629267592F400F4ED47 /* HHFace.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HHFace.bundle; sourceTree = "<group>"; };
 		35CF762D2675939300F4ED47 /* HHKeyboardResources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHKeyboardResources.h; sourceTree = "<group>"; };
-		35CF76302675958D00F4ED47 /* HHKeyboard.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HHKeyboard.bundle; sourceTree = "<group>"; };
 		35CF7632267595A800F4ED47 /* HHKeyboardResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHKeyboardResources.m; sourceTree = "<group>"; };
 		35CF763726764AC000F4ED47 /* UIButton+HHKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+HHKeyboard.h"; sourceTree = "<group>"; };
 		35CF763826764AC000F4ED47 /* UIButton+HHKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HHKeyboard.m"; sourceTree = "<group>"; };
 		35CF763D2676852000F4ED47 /* UIColor+HHKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+HHKeyboard.h"; sourceTree = "<group>"; };
 		35CF763E2676852000F4ED47 /* UIColor+HHKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HHKeyboard.m"; sourceTree = "<group>"; };
+		35E01DA426FB192C009AE694 /* HHKeyboard.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HHKeyboard.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,8 +177,8 @@
 		35CF76282675911A00F4ED47 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				35CF76302675958D00F4ED47 /* HHKeyboard.bundle */,
 				35CF7629267592F400F4ED47 /* HHFace.bundle */,
+				35E01DA426FB192C009AE694 /* HHKeyboard.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -240,9 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				35CF762B267592F500F4ED47 /* HHFace.bundle in Resources */,
-				35CF76312675958D00F4ED47 /* HHKeyboard.bundle in Resources */,
 				35CF75EE2673C2BA00F4ED47 /* LaunchScreen.storyboard in Resources */,
 				35CF75EB2673C2BA00F4ED47 /* Assets.xcassets in Resources */,
+				35E01DA526FB192C009AE694 /* HHKeyboard.xcassets in Resources */,
 				35CF75E92673C2B900F4ED47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -404,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -419,7 +419,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HHKeyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,7 +437,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HHKeyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

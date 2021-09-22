@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 @required
 - (CGFloat)keyboardHeight;
 
+@optional
+- (void)keyboardShow;
+
+- (void)keyboardDismiss;
+
 @end
 
 @protocol HHKeyboardDelegate <NSObject>
@@ -54,7 +59,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)dismissWithAnimation:(BOOL)animation;
 
 /// 重置键盘
-- (void)reset;
+- (void)reset:(CGFloat)width;
 
 @end
 
