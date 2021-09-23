@@ -9,14 +9,18 @@
 
 @implementation HHKeyboardResources
 
++ (UIImage *)getKeyboardImage:(NSString *)name {
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSURL *url = [bundle URLForResource:@"HHKeyboard" withExtension:@"bundle"];
+    NSBundle *targetBundle = [NSBundle bundleWithURL:url];
+    UIImage *image = [UIImage imageNamed:name inBundle:targetBundle compatibleWithTraitCollection:nil];
+    return image;
+}
+
 + (NSString *)getPathWithFace:(NSString *)name {
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     NSURL *bundleURL = [bundle URLForResource:@"HHFace" withExtension:@"bundle"];
     NSBundle *resourceBundle = [NSBundle bundleWithURL:bundleURL];
-    if (!resourceBundle) {
-        NSString *bundlePath = [bundle.resourcePath stringByAppendingPathComponent:@"HHFace.bundle"];
-        resourceBundle = [NSBundle bundleWithPath:bundlePath];
-    }
     return [[resourceBundle ?: bundle resourcePath] stringByAppendingPathComponent:name];
 }
 

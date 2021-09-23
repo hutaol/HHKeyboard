@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HHKeyboardResources : NSObject
 
++ (UIImage *)getKeyboardImage:(NSString *)name;
+
 + (NSString *)getPathWithFace:(NSString *)name;
 
 + (UIImage *)getImageFromFace:(NSString *)name;

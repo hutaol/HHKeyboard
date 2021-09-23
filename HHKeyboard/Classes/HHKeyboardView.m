@@ -73,14 +73,14 @@
 }
 
 - (void)p_initImage {
-    kVoiceImage = [UIImage imageNamed:@"icon_keyboard_voice_nor"];
-    kVoiceImageHL = [UIImage imageNamed:@"icon_keyboard_voice_press"];
-    kFaceImage = [UIImage imageNamed:@"icon_keyboard_face_nor"];
-    kFaceImageHL = [UIImage imageNamed:@"icon_keyboard_face_press"];
-    kMoreImage = [UIImage imageNamed:@"icon_keyboard_add_nor"];
-    kMoreImageHL = [UIImage imageNamed:@"icon_keyboard_add_press"];
-    kKeyboardImage = [UIImage imageNamed:@"icon_keyboard_keyboard_nor"];
-    kKeyboardImageHL = [UIImage imageNamed:@"icon_keyboard_keyboard_press"];
+    kVoiceImage = [HHKeyboardResources getKeyboardImage:@"icon_keyboard_voice_nor"];
+    kVoiceImageHL = [HHKeyboardResources getKeyboardImage:@"icon_keyboard_voice_press"];
+    kFaceImage = [HHKeyboardResources getKeyboardImage:@"icon_keyboard_face_nor"];
+    kFaceImageHL = [HHKeyboardResources getKeyboardImage:@"icon_keyboard_face_press"];
+    kMoreImage = [HHKeyboardResources getKeyboardImage:@"icon_keyboard_add_nor"];
+    kMoreImageHL = [HHKeyboardResources getKeyboardImage:@"icon_keyboard_add_press"];
+    kKeyboardImage = [HHKeyboardResources getKeyboardImage:@"icon_keyboard_keyboard_nor"];
+    kKeyboardImageHL = [HHKeyboardResources getKeyboardImage:@"icon_keyboard_keyboard_press"];
 }
 
 - (void)p_init {
