@@ -16,7 +16,7 @@
     if (self) {
         _lineColor = [UIColor kb_colorWithLightColor:[UIColor kb_colorWithString:@"#EAEAEA"] darkColor:[UIColor kb_colorWithString:@"#555555"]];
         
-        _bgColor = [UIColor kb_colorWithLightColor:[UIColor kb_colorWithString:@"#FAFAFA"] darkColor:[UIColor blackColor]];
+        _bgColor = [UIColor kb_colorWithLightColor:[UIColor kb_colorWithString:@"#FAFAFA"] darkColor:[UIColor kb_colorWithString:@"#010101"]];
         
         _borderColor = [UIColor kb_colorWithLightColor:[UIColor kb_colorWithString:@"#EAEAEA"] darkColor:[UIColor kb_colorWithString:@"#555555"]];
         
