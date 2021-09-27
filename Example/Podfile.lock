@@ -1,5 +1,5 @@
 PODS:
-  - HHKeyboard (0.1.0)
+  - HHKeyboard (0.1.1)
 
 DEPENDENCIES:
   - HHKeyboard (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HHKeyboard: c3f1e3c8f16ec18a7c66a9dfe7bf9a68be39536c
+  HHKeyboard: f722d8b4145e25c3207f34b8fc2129441ccb1adf
 
 PODFILE CHECKSUM: 73968a5dcc31f24a4ada4cdf88dffdb006c88307
 
-COCOAPODS: 1.11.0
+COCOAPODS: 1.11.2

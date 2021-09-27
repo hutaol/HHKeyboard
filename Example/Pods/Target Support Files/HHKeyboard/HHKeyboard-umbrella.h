@@ -11,6 +11,7 @@
 #endif
 
 #import "HHBaseKeyboard.h"
+#import "HHKeyboard.h"
 #import "HHKeyboardConfiguration.h"
 #import "HHKeyboardFaceCategoryView.h"
 #import "HHKeyboardFaceCell.h"
@@ -27,6 +28,7 @@
 #import "HHKeyboardView.h"
 #import "UIButton+HHKeyboard.h"
 #import "UIColor+HHKeyboard.h"
+#import "UIWindow+HHKeyboard.h"
 
 FOUNDATION_EXPORT double HHKeyboardVersionNumber;
 FOUNDATION_EXPORT const unsigned char HHKeyboardVersionString[];

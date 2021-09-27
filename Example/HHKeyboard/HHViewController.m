@@ -7,9 +7,7 @@
 //
 
 #import "HHViewController.h"
-#import "HHKeyboardView.h"
-#import "HHKeyboardHelper.h"
-#import "UIColor+HHKeyboard.h"
+#import <HHKeyboard/HHKeyboard.h>
 
 @interface HHViewController () <UITableViewDataSource, UITableViewDelegate, HHKeyboardViewDelegate>
 
@@ -43,7 +41,7 @@
 
 - (void)onClickDark {
     _dark = !_dark;
-    UIWindow *keyWindow = [HHKeyboardHelper kb_window];
+    UIWindow *keyWindow = [UIWindow kb_keyWindow];
     if (@available(iOS 13.0, *)) {
         if (_dark) {
             keyWindow.overrideUserInterfaceStyle = UIUserInterfaceStyleDark;

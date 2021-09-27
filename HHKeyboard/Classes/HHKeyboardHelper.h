@@ -14,9 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否Pad
 + (BOOL)kb_isPad;
 
-/// 窗口
-+ (UIWindow *)kb_window;
-
 /// 是否竖屏
 + (BOOL)kb_isPortrait;
 

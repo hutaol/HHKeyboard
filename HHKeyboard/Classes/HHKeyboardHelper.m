@@ -6,6 +6,7 @@
 //
 
 #import "HHKeyboardHelper.h"
+#import "UIWindow+HHKeyboard.h"
 
 @implementation HHKeyboardHelper
 
@@ -13,30 +14,10 @@
     return [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad;
 }
 
-+ (UIWindow *)kb_window {
-    if (@available(iOS 13.0, *)) {
-        UIWindow *foundWindow = nil;
-        NSArray *windows = [[UIApplication sharedApplication] windows];
-        for (UIWindow *window in windows) {
-            if (window.isKeyWindow) {
-                foundWindow = window;
-                break;
-            }
-        }
-        if (foundWindow == nil) {
-            if (windows.count > 0) {
-                foundWindow = windows[0];
-            }
-        }
-        return foundWindow;
-    }
-    return [UIApplication sharedApplication].keyWindow;
-}
-
 + (BOOL)kb_isPortrait {
     UIInterfaceOrientation orientation;
     if (@available(iOS 13.0, *)) {
-        orientation = [self kb_window].windowScene.interfaceOrientation;
+        orientation = [UIWindow kb_keyWindow].windowScene.interfaceOrientation;
     } else {
         orientation = [UIApplication sharedApplication].statusBarOrientation;
     }
@@ -48,11 +29,11 @@
 }
 
 + (CGFloat)kb_navBarHeight {
-    return [self kb_isPad] ? 50 : 44;
+    return [UIWindow kb_topViewController].navigationController.navigationBar.frame.size.height;
 }
 
 + (CGFloat)kb_statusNavHeight {
-    return [self kb_statusBarHeight] + ([self kb_isPad] ? 50 : 44);
+    return [self kb_statusBarHeight] + [self kb_navBarHeight];
 }
 
 + (CGFloat)kb_topSafeHeight {
@@ -65,7 +46,7 @@
 
 + (UIEdgeInsets)kb_safeAreaInset {
     if (@available(iOS 11.0, *)) {
-        return [self kb_window].safeAreaInsets;
+        return [UIWindow kb_keyWindow].safeAreaInsets;
     } else {
         return UIEdgeInsetsMake(20, 0, 0, 0);
     }
