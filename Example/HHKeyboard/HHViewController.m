@@ -16,6 +16,8 @@
 
 @property (nonatomic, assign) BOOL dark;
 
+@property (nonatomic, strong) NSMutableArray *data;
+
 @end
 
 @implementation HHViewController
@@ -37,6 +39,12 @@
     [self updateTableViewInsets];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"暗黑模式" style:UIBarButtonItemStylePlain target:self action:@selector(onClickDark)];
+    
+    self.data = [NSMutableArray array];
+    
+    for (int i = 0; i < 10; i ++) {
+        [self.data addObject:[NSString stringWithFormat:@"标题 %d", i]];
+    }
 }
 
 - (void)onClickDark {
@@ -72,13 +80,15 @@
     
 }
 
+#pragma mark --
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    return self.data.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
-    cell.textLabel.text = [NSString stringWithFormat:@"标题 %ld", indexPath.row];
+    cell.textLabel.text = self.data[indexPath.row];
     return cell;
 }
 
@@ -90,6 +100,20 @@
 
 - (void)keyboard:(HHKeyboardView *)keyboard didChangeHeight:(CGFloat)height {
     [self updateTableViewInsets];
+}
+
+- (void)keyboard:(HHKeyboardView *)keyboard sendText:(NSString *)text {
+    [self.data addObject:text];
+    [self.tableView reloadData];
+    
+    [self scrollToBottom];
+
+}
+
+- (void)scrollToBottom {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.data.count - 1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+    });
 }
 
 - (void)updateTableViewInsets {
