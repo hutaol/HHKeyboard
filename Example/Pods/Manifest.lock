@@ -1,18 +1,20 @@
 PODS:
   - HHKeyboard (0.2.0):
-    - HHKeyboard/Face (= 0.2.0)
+    - HHKeyboard/Core (= 0.2.0)
+  - HHKeyboard/Core (0.2.0)
   - HHKeyboard/Face (0.2.0)
 
 DEPENDENCIES:
   - HHKeyboard (from `../`)
+  - HHKeyboard/Face (from `../`)
 
 EXTERNAL SOURCES:
   HHKeyboard:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HHKeyboard: 27dc72c6364cd5d44eb12eee559a2de15f0eea91
+  HHKeyboard: 757a279c0f09a625772f220af0e1b5c741e44c67
 
-PODFILE CHECKSUM: 73968a5dcc31f24a4ada4cdf88dffdb006c88307
+PODFILE CHECKSUM: de4acf207956b178bb2f79aa4c2f646fb0ac70d6
 
 COCOAPODS: 1.11.2

@@ -4,6 +4,7 @@ platform :ios, '9.0'
 
 target 'HHKeyboard_Example' do
   pod 'HHKeyboard', :path => '../'
+  pod 'HHKeyboard/Face', :path => '../'
 
   target 'HHKeyboard_Tests' do
     inherit! :search_paths

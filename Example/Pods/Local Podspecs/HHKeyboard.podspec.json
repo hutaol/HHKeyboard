@@ -22,14 +22,18 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "HHKeyboard/Classes/**/*",
-  "resource_bundles": {
-    "HHKeyboard": [
-      "HHKeyboard/Assets/*.xcassets"
-    ]
-  },
   "requires_arc": true,
+  "default_subspecs": "Core",
   "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "HHKeyboard/Classes/**/*",
+      "resource_bundles": {
+        "HHKeyboard": [
+          "HHKeyboard/Assets/*.xcassets"
+        ]
+      }
+    },
     {
       "name": "Face",
       "resources": "HHKeyboard/Assets/*.bundle"
