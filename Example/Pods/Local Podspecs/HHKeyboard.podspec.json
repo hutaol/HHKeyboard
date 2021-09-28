@@ -1,9 +1,13 @@
 {
   "name": "HHKeyboard",
-  "version": "0.1.1",
-  "summary": "A short description of HHKeyboard.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.2.0",
+  "summary": "一个简单的聊天键盘",
+  "description": "聊天键盘：支持暗黑模式，语音，键盘，表情和更多类型配置",
   "homepage": "https://github.com/hutaol/HHKeyboard",
+  "screenshots": [
+    "https://github.com/hutaol/HHKeyboard/blob/main/Screenshots/screenshots_1.png",
+    "https://github.com/hutaol/HHKeyboard/blob/main/Screenshots/screenshots_2.png"
+  ],
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -13,16 +17,22 @@
   },
   "source": {
     "git": "https://github.com/hutaol/HHKeyboard.git",
-    "tag": "0.1.1"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "HHKeyboard/Classes/**/*",
-  "resources": "HHKeyboard/Assets/*.bundle",
   "resource_bundles": {
     "HHKeyboard": [
       "HHKeyboard/Assets/*.xcassets"
     ]
-  }
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Face",
+      "resources": "HHKeyboard/Assets/*.bundle"
+    }
+  ]
 }

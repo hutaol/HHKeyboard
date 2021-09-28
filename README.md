@@ -23,6 +23,7 @@
 
 ```ruby
 pod 'HHKeyboard'
+pod 'HHKeyboard/Face' // 表情图片
 ```
 
 2. 执行 `pod install` 或 `pod update`。

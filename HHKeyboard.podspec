@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HHKeyboard'
-  s.version          = '0.1.3'
-  s.summary          = 'A short description of HHKeyboard.'
+  s.version          = '0.2.0'
+  s.summary          = '一个简单的聊天键盘'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,11 +18,11 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  聊天键盘：支持暗黑模式，语音，键盘，表情和更多类型配置
                        DESC
 
   s.homepage         = 'https://github.com/hutaol/HHKeyboard'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://github.com/hutaol/HHKeyboard/blob/main/Screenshots/screenshots_1.png', 'https://github.com/hutaol/HHKeyboard/blob/main/Screenshots/screenshots_2.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Henry' => '1325049637@qq.com' }
   s.source           = { :git => 'https://github.com/hutaol/HHKeyboard.git', :tag => s.version.to_s }
@@ -32,13 +32,14 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'HHKeyboard/Classes/**/*'
   
-  s.resources = "HHKeyboard/Assets/*.bundle"
-
   s.resource_bundles = {
     'HHKeyboard' => ['HHKeyboard/Assets/*.xcassets']
   }
+  
+  s.subspec 'Face' do |face|
+    face.resources = "HHKeyboard/Assets/*.bundle"
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.requires_arc = true
+
 end

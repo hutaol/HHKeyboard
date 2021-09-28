@@ -8,169 +8,169 @@
 
 /* Begin PBXBuildFile section */
 		0291C00A56B6FFB2AB2F7B9A5292AD64 /* Pods-HHKeyboard_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 132F988112AD650192A95C69C7A2B53F /* Pods-HHKeyboard_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		02B9F8E389ADAB3E61DE82926B7EB973 /* HHKeyboardFaceCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2B627329594F90267E6D2EDDB4861C /* HHKeyboardFaceCategoryView.m */; };
-		04D6018BFECD13DAF609D854C24CE4B1 /* HHBaseKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = AA63B300CFB4343DBD0940715B9111B2 /* HHBaseKeyboard.m */; };
+		02B9F8E389ADAB3E61DE82926B7EB973 /* HHKeyboardFaceCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CAA7971D277814B2533E43800AD97A /* HHKeyboardFaceCategoryView.m */; };
+		04D6018BFECD13DAF609D854C24CE4B1 /* HHBaseKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 40011D9A27431387A1070958FC05F539 /* HHBaseKeyboard.m */; };
 		069310E8DBAB2A1663846CF274381634 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		092A50349C3276149722763A23F57ED1 /* HHKeyboardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EBD735B7C6BD16A95F342DE811C3C95 /* HHKeyboardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D7E3A4F712BC9FEF38C4680E637DDAB /* UIWindow+HHKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = AC78E02ED9748E1836D6D9E72D0CE6A3 /* UIWindow+HHKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		186FAEF699E68F67C15A9519A1BB6E89 /* HHKeyboardFaceCategoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86BDFC46F7745A2DA7D0814119EB52E6 /* HHKeyboardFaceCategoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DE969FCE2D7744CA7DB5C70F02A8388 /* HHKeyboardTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A88CF22EA0233B86DFC782C6AF42A9A /* HHKeyboardTextView.m */; };
-		20A4D7CEDB527CEC10734D74A1944A25 /* HHKeyboardConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = D5FD89993D449CB9CF6E84ED98C3A0D9 /* HHKeyboardConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2590A06489224B221F5CEF9DB39F3F76 /* HHKeyboardFaceGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 143D28DA9BD119053C1D0098DE9B8A66 /* HHKeyboardFaceGroup.m */; };
-		29E01D8467A318FE6E9636042A4770E8 /* HHKeyboardFaceItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 34317E48C238EEA2BBE2913EF8D68F2E /* HHKeyboardFaceItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BF2BC5BAF838088D4D549A13B9C240E /* HHKeyboardResources.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C4AC29975313DB1345E2356EA6426EF /* HHKeyboardResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		353A77E0761D3D74E4558F5140A19B56 /* HHFace.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0984B22A29A90740B5DD236C8E75BC56 /* HHFace.bundle */; };
-		3EA270247E0F4BC147C7AA937DC256CF /* HHKeyboardMoreCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EBE098639066E2C5D280F612682F76D /* HHKeyboardMoreCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3FFE70C7D6E1DCC5137989A33242F672 /* HHKeyboardFaceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 878D6E5625EC9BB8D4767A62FCBC60A8 /* HHKeyboardFaceItem.m */; };
-		4345EB7EF4C684B639BF6D1D9C1F9D88 /* HHKeyboardFaceGroupCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 785D2B74FC5EEA86CD4D2EC1D5FDED58 /* HHKeyboardFaceGroupCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B36A94820203A51FB3B74FBF67B646F /* UIButton+HHKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA8CFD59C6B4ED575E8897FBFE46936 /* UIButton+HHKeyboard.m */; };
-		4EC916527CABE3B7FC2E4E132D00DF16 /* HHKeyboardMoreItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 49323E9AFCCF2803876AA49EDAB853D5 /* HHKeyboardMoreItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5401F6A9BC34037E8316B7331A1FD57B /* HHKeyboardMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1260E99366EFCE8C456D846F9242EB7A /* HHKeyboardMoreCell.m */; };
-		5A8578BA49445DC32C0F505810700ED8 /* HHKeyboardMoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B936E544E88F2DFA6322B43358A14734 /* HHKeyboardMoreItem.m */; };
+		092A50349C3276149722763A23F57ED1 /* HHKeyboardView.h in Headers */ = {isa = PBXBuildFile; fileRef = F000E04545E2120B3E5866409AF98A2D /* HHKeyboardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D7E3A4F712BC9FEF38C4680E637DDAB /* UIWindow+HHKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = FD7FF9AED4A0F6D913724F5A29DE5B4A /* UIWindow+HHKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E8AA7BA8442585B0C39CB0B2D298007 /* HHKeyboard.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9554A0BBE1F3FFC8729282D70DC15DD4 /* HHKeyboard.xcassets */; };
+		186FAEF699E68F67C15A9519A1BB6E89 /* HHKeyboardFaceCategoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A04184B3A3E62A283F9C398F0332FAF /* HHKeyboardFaceCategoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DE969FCE2D7744CA7DB5C70F02A8388 /* HHKeyboardTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7666FB1EEAEED6FD87F659A7D8E360E0 /* HHKeyboardTextView.m */; };
+		20A4D7CEDB527CEC10734D74A1944A25 /* HHKeyboardConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = F86F754CBBAD8E7FE1DF4A8A6E4FA430 /* HHKeyboardConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2590A06489224B221F5CEF9DB39F3F76 /* HHKeyboardFaceGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 881B675AE862F3ABEBF814407A86B504 /* HHKeyboardFaceGroup.m */; };
+		29E01D8467A318FE6E9636042A4770E8 /* HHKeyboardFaceItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A94CB3BC53588B1D9C660B8F09CF47 /* HHKeyboardFaceItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BF2BC5BAF838088D4D549A13B9C240E /* HHKeyboardResources.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC804D9565E8493EB0E436C0B7A2020 /* HHKeyboardResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		353A77E0761D3D74E4558F5140A19B56 /* HHFace.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8BCE8D68A73510E64C5C3D62DDE1E730 /* HHFace.bundle */; };
+		3EA270247E0F4BC147C7AA937DC256CF /* HHKeyboardMoreCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E4370E71B169ABAAA04C558B91A598 /* HHKeyboardMoreCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FFE70C7D6E1DCC5137989A33242F672 /* HHKeyboardFaceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C92EC6C7814E5D10A98D99E3659A6 /* HHKeyboardFaceItem.m */; };
+		4345EB7EF4C684B639BF6D1D9C1F9D88 /* HHKeyboardFaceGroupCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A91B9AAE8544E90A02839C6E207235 /* HHKeyboardFaceGroupCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B36A94820203A51FB3B74FBF67B646F /* UIButton+HHKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F799C528DAD2E3A104F72054D6A029 /* UIButton+HHKeyboard.m */; };
+		4EC916527CABE3B7FC2E4E132D00DF16 /* HHKeyboardMoreItem.h in Headers */ = {isa = PBXBuildFile; fileRef = CE18792C216843A8C141D250C25772FE /* HHKeyboardMoreItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5401F6A9BC34037E8316B7331A1FD57B /* HHKeyboardMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E52B61A66EE6AE978E284F9A4068EF /* HHKeyboardMoreCell.m */; };
+		5A8578BA49445DC32C0F505810700ED8 /* HHKeyboardMoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F412A3048F23E37E3A8674CF17A9354 /* HHKeyboardMoreItem.m */; };
 		5F65E65F49905DAAC2C5C1E2BB06012F /* Pods-HHKeyboard_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11428DDC55F0864A666BDA0654C9F664 /* Pods-HHKeyboard_Example-dummy.m */; };
 		64A3C9A9097D84E58BAA0929AEC95C52 /* Pods-HHKeyboard_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 212C98AEFA5121DBA9A0D693632593D2 /* Pods-HHKeyboard_Tests-dummy.m */; };
-		666BD3E900779A7BD8E995019303067B /* HHKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 727BACCB7BD0FB7B851AACAED22F3656 /* HHKeyboardView.m */; };
-		6B66C37D8DA45456EFF022A7A3377FA6 /* HHKeyboard.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3B8A8FB7C5E9931761B016DF2E81A04 /* HHKeyboard.xcassets */; };
-		6C29378161A520D8DD2E0AA0AB237B63 /* HHKeyboardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F063EC5784318EDE2326D25D6115B9F /* HHKeyboardHelper.m */; };
-		6E745A2F7DBD378EC6C51FBC2AFEF730 /* HHKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 50606342BC816BAF2D06CAE103A56673 /* HHKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71F6007EB658241BFB0194694FE264C4 /* HHKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2D02D31510DB60A90EC82FD2D1EDA8 /* HHKeyboard-dummy.m */; };
-		84BE4BAE4EBA178C958AE1E2E339D9BD /* HHKeyboardFaceGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9605E025858711034059626CABD5C025 /* HHKeyboardFaceGroupCell.m */; };
-		86928204AA121D6FF68A7941C27BF45C /* HHKeyboardFaceView.h in Headers */ = {isa = PBXBuildFile; fileRef = F849741BB666A8A21AD071E4152DBD57 /* HHKeyboardFaceView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		666BD3E900779A7BD8E995019303067B /* HHKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1174218038781D1C10B00BD12F2D06 /* HHKeyboardView.m */; };
+		6C29378161A520D8DD2E0AA0AB237B63 /* HHKeyboardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BDB229CEF2A0AAFA4C9275DC56C0BC /* HHKeyboardHelper.m */; };
+		6E745A2F7DBD378EC6C51FBC2AFEF730 /* HHKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 497EB6D470FC6BA53179E5F2D342671A /* HHKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71F6007EB658241BFB0194694FE264C4 /* HHKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE368D3DD94F1A79B66760EDA16993F4 /* HHKeyboard-dummy.m */; };
+		84BE4BAE4EBA178C958AE1E2E339D9BD /* HHKeyboardFaceGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60132A970423E43A2A83E6A29B1B4D3C /* HHKeyboardFaceGroupCell.m */; };
+		86928204AA121D6FF68A7941C27BF45C /* HHKeyboardFaceView.h in Headers */ = {isa = PBXBuildFile; fileRef = 84D09DC7A2F347DC28E50D75E9B89A26 /* HHKeyboardFaceView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		884F22CB66EA68DC06BFAA55C5F78174 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		8F9317CE0DF052BE0FBBE818D1570DE4 /* Pods-HHKeyboard_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F3247B9E8C04E300C7B2C1617FCF6B /* Pods-HHKeyboard_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9299B4445288AE10E2C70A863B5E358F /* HHKeyboardFaceGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = B14AF6D481BE6AD09EB1F25B222FD977 /* HHKeyboardFaceGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96DFB3BB47E7937F57B0373A59C8B42C /* HHKeyboardFaceCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5BA289A28AB2B6FF0B381E9E535DEC /* HHKeyboardFaceCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9299B4445288AE10E2C70A863B5E358F /* HHKeyboardFaceGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BDC43F082D73E2810C799C44EAA7FAA /* HHKeyboardFaceGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96DFB3BB47E7937F57B0373A59C8B42C /* HHKeyboardFaceCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B37134C6D3AB77CC6831493BC81C5BC /* HHKeyboardFaceCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C5C6F9E1022CB29FB7F9C91060BA2D2 /* HHKeyboard-HHKeyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DD9B5971FF374B2720200EECE930E5 /* HHKeyboard-HHKeyboard */; };
-		9F99D1C793FC33312F2DFF1C77422374 /* UIWindow+HHKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D39C4EABBE23E435C33DE86E8B4C3675 /* UIWindow+HHKeyboard.m */; };
-		AB1FA4F0E47C31674DC251FEF2E76991 /* HHKeyboardResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE626443C4068E115A3BF0B4C59DDE8 /* HHKeyboardResources.m */; };
-		AF4A653911AAAB9AA002DDAB8E55D538 /* UIButton+HHKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BC5A07342AAEF723C2364D40E323A77 /* UIButton+HHKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7116AF099A08D6CD002513AA04E90D3 /* HHKeyboardConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4F68F3434E6B2CDDB0A654B85677DE /* HHKeyboardConfiguration.m */; };
-		B8F47F3801DC5D2702CC178227F4581F /* HHKeyboardMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F7F880A5D3495029D1A760F024EE7 /* HHKeyboardMoreView.m */; };
-		B992630FA696FDCE24B02979216761C8 /* HHKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2AF06F74D37DB0B9121A8FB733826C /* HHKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D748022C5E9491EBFCF93B7FDFAD7D6E /* UIColor+HHKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 375739763E564EB52F74E9DFC81B14D4 /* UIColor+HHKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB0BD4B91902EA568172102BBB21A4FB /* UIColor+HHKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5793715E7EF32C4FD7829E9105DCDC /* UIColor+HHKeyboard.m */; };
-		E35525065C75CAC6373A36D95EC67F89 /* HHBaseKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = C65A365261D63C00EA6FA50AF4552328 /* HHBaseKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E86937DE3A57EB53C9F3B1344486DAFD /* HHKeyboardMoreView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4353DFC42A8AF1B88789C334392D6B07 /* HHKeyboardMoreView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB9F841F3D92EBFA490EBB05C8199988 /* HHKeyboardFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E20119FB7E717C7340E697A6965E84 /* HHKeyboardFaceView.m */; };
+		9F99D1C793FC33312F2DFF1C77422374 /* UIWindow+HHKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA882E21245C338BB991837359300FD /* UIWindow+HHKeyboard.m */; };
+		AB1FA4F0E47C31674DC251FEF2E76991 /* HHKeyboardResources.m in Sources */ = {isa = PBXBuildFile; fileRef = F65251A6E488021AA8432A85F9694917 /* HHKeyboardResources.m */; };
+		AF4A653911AAAB9AA002DDAB8E55D538 /* UIButton+HHKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B332C0BF1682BEFFF46CFAC8AAE864F /* UIButton+HHKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7116AF099A08D6CD002513AA04E90D3 /* HHKeyboardConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F96169FB08DF84799F46194FDD23E9 /* HHKeyboardConfiguration.m */; };
+		B8F47F3801DC5D2702CC178227F4581F /* HHKeyboardMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = B490D428ED1EBAB44A0498AF8FA41A8D /* HHKeyboardMoreView.m */; };
+		B992630FA696FDCE24B02979216761C8 /* HHKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A8D70C64E37629A2852518AE87A5394 /* HHKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D748022C5E9491EBFCF93B7FDFAD7D6E /* UIColor+HHKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D52E4E5B9328B7B6DF68C0819614552 /* UIColor+HHKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB0BD4B91902EA568172102BBB21A4FB /* UIColor+HHKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7A0BFB1CA1974BE98BBF2B19CE0F3 /* UIColor+HHKeyboard.m */; };
+		E35525065C75CAC6373A36D95EC67F89 /* HHBaseKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E8C84CB41DD12177053212AD2BD544C /* HHBaseKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E86937DE3A57EB53C9F3B1344486DAFD /* HHKeyboardMoreView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C3804E83C2863CFB623C9BAA98771E2 /* HHKeyboardMoreView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB9F841F3D92EBFA490EBB05C8199988 /* HHKeyboardFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437049171291583337587E260C027EC /* HHKeyboardFaceView.m */; };
 		F725C6688BA1E74F60051263E652052B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F796A99C427200A3C4F951617499F98A /* HHKeyboardHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E154472AF23C09F058A7A1F6716540 /* HHKeyboardHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAD92D2EF06F8B85229D36678758719E /* HHKeyboardFaceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32901B015127FDC08A6FF6CCECC5D7D2 /* HHKeyboardFaceCell.m */; };
-		FF3B33BDC4A127A7D6A98A64853664A0 /* HHKeyboardTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 31FA3CD99EE8D9C11575521B7BA53000 /* HHKeyboardTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F796A99C427200A3C4F951617499F98A /* HHKeyboardHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 91786BB9A0DAD49AB36F26E31F969D81 /* HHKeyboardHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAD92D2EF06F8B85229D36678758719E /* HHKeyboardFaceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771E803D4FA554D356450122CE64F42E /* HHKeyboardFaceCell.m */; };
+		FF3B33BDC4A127A7D6A98A64853664A0 /* HHKeyboardTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F7DD67440E29D88498D50940E3FD0A56 /* HHKeyboardTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		93423152069B904EEFB18E6B6F6F4475 /* PBXContainerItemProxy */ = {
+		102C3290C7C3CF55A179DC7DCC03B950 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 33F6BFFAAE0A93E6D7354882F560A012;
 			remoteInfo = "HHKeyboard-HHKeyboard";
 		};
-		A7653504D2310F6258EF3FAEEB23F519 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1FB00A699953F3885D439095A7BE3DAE;
-			remoteInfo = HHKeyboard;
-		};
-		D3298034AEC7C2AB6FD994FF98864097 /* PBXContainerItemProxy */ = {
+		8A1C80B2DC8F2226FDDDF592DE45882C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4BAEE109F1E2FD3601B3BCDC9C89DA18;
 			remoteInfo = "Pods-HHKeyboard_Example";
 		};
+		AAEC1C8A02C2CEAE812B4963017A1086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FB00A699953F3885D439095A7BE3DAE;
+			remoteInfo = HHKeyboard;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0984B22A29A90740B5DD236C8E75BC56 /* HHFace.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = HHFace.bundle; path = HHKeyboard/Assets/HHFace.bundle; sourceTree = "<group>"; };
+		0437049171291583337587E260C027EC /* HHKeyboardFaceView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardFaceView.m; path = HHKeyboard/Classes/HHKeyboardFaceView.m; sourceTree = "<group>"; };
 		0B1B980F41EF9B5CB72C74ED331A26E4 /* Pods-HHKeyboard_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHKeyboard_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0CE626443C4068E115A3BF0B4C59DDE8 /* HHKeyboardResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardResources.m; path = HHKeyboard/Classes/HHKeyboardResources.m; sourceTree = "<group>"; };
-		0EBE098639066E2C5D280F612682F76D /* HHKeyboardMoreCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardMoreCell.h; path = HHKeyboard/Classes/HHKeyboardMoreCell.h; sourceTree = "<group>"; };
+		0B37134C6D3AB77CC6831493BC81C5BC /* HHKeyboardFaceCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardFaceCell.h; path = HHKeyboard/Classes/HHKeyboardFaceCell.h; sourceTree = "<group>"; };
 		11428DDC55F0864A666BDA0654C9F664 /* Pods-HHKeyboard_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HHKeyboard_Example-dummy.m"; sourceTree = "<group>"; };
-		1260E99366EFCE8C456D846F9242EB7A /* HHKeyboardMoreCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardMoreCell.m; path = HHKeyboard/Classes/HHKeyboardMoreCell.m; sourceTree = "<group>"; };
-		130EB22AC69C3121F347313BF267ED83 /* HHKeyboard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HHKeyboard-Info.plist"; sourceTree = "<group>"; };
+		12E698C483986B6EAF2E80966D95D8CA /* HHKeyboard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHKeyboard-prefix.pch"; sourceTree = "<group>"; };
 		132F988112AD650192A95C69C7A2B53F /* Pods-HHKeyboard_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HHKeyboard_Example-umbrella.h"; sourceTree = "<group>"; };
-		143D28DA9BD119053C1D0098DE9B8A66 /* HHKeyboardFaceGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardFaceGroup.m; path = HHKeyboard/Classes/HHKeyboardFaceGroup.m; sourceTree = "<group>"; };
-		1A4A4A89E086F022F29C7677DE053F4C /* HHKeyboard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHKeyboard-prefix.pch"; sourceTree = "<group>"; };
-		1EBD735B7C6BD16A95F342DE811C3C95 /* HHKeyboardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardView.h; path = HHKeyboard/Classes/HHKeyboardView.h; sourceTree = "<group>"; };
+		15CAA7971D277814B2533E43800AD97A /* HHKeyboardFaceCategoryView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardFaceCategoryView.m; path = HHKeyboard/Classes/HHKeyboardFaceCategoryView.m; sourceTree = "<group>"; };
+		18F799C528DAD2E3A104F72054D6A029 /* UIButton+HHKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+HHKeyboard.m"; path = "HHKeyboard/Classes/UIButton+HHKeyboard.m"; sourceTree = "<group>"; };
+		1A8D70C64E37629A2852518AE87A5394 /* HHKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHKeyboard-umbrella.h"; sourceTree = "<group>"; };
 		212C98AEFA5121DBA9A0D693632593D2 /* Pods-HHKeyboard_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HHKeyboard_Tests-dummy.m"; sourceTree = "<group>"; };
+		22EA34715E7DA9317D55992F3DD9FB30 /* ResourceBundle-HHKeyboard-HHKeyboard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-HHKeyboard-HHKeyboard-Info.plist"; sourceTree = "<group>"; };
 		2A3B403521AEC30349292C17FACCAAF8 /* Pods-HHKeyboard_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHKeyboard_Example-Info.plist"; sourceTree = "<group>"; };
-		2B4F68F3434E6B2CDDB0A654B85677DE /* HHKeyboardConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardConfiguration.m; path = HHKeyboard/Classes/HHKeyboardConfiguration.m; sourceTree = "<group>"; };
-		2E2AF06F74D37DB0B9121A8FB733826C /* HHKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHKeyboard-umbrella.h"; sourceTree = "<group>"; };
-		31FA3CD99EE8D9C11575521B7BA53000 /* HHKeyboardTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardTextView.h; path = HHKeyboard/Classes/HHKeyboardTextView.h; sourceTree = "<group>"; };
-		32901B015127FDC08A6FF6CCECC5D7D2 /* HHKeyboardFaceCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardFaceCell.m; path = HHKeyboard/Classes/HHKeyboardFaceCell.m; sourceTree = "<group>"; };
-		34317E48C238EEA2BBE2913EF8D68F2E /* HHKeyboardFaceItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardFaceItem.h; path = HHKeyboard/Classes/HHKeyboardFaceItem.h; sourceTree = "<group>"; };
-		375739763E564EB52F74E9DFC81B14D4 /* UIColor+HHKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+HHKeyboard.h"; path = "HHKeyboard/Classes/UIColor+HHKeyboard.h"; sourceTree = "<group>"; };
+		2AC804D9565E8493EB0E436C0B7A2020 /* HHKeyboardResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardResources.h; path = HHKeyboard/Classes/HHKeyboardResources.h; sourceTree = "<group>"; };
+		2EA882E21245C338BB991837359300FD /* UIWindow+HHKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+HHKeyboard.m"; path = "HHKeyboard/Classes/UIWindow+HHKeyboard.m"; sourceTree = "<group>"; };
+		30F056960D52504949E33084A6B7EAE6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		33A94CB3BC53588B1D9C660B8F09CF47 /* HHKeyboardFaceItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardFaceItem.h; path = HHKeyboard/Classes/HHKeyboardFaceItem.h; sourceTree = "<group>"; };
+		34F96169FB08DF84799F46194FDD23E9 /* HHKeyboardConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardConfiguration.m; path = HHKeyboard/Classes/HHKeyboardConfiguration.m; sourceTree = "<group>"; };
 		38C55ED87BB7ABB8075504EDFCFF48E1 /* Pods-HHKeyboard_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HHKeyboard_Tests"; path = Pods_HHKeyboard_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B2D02D31510DB60A90EC82FD2D1EDA8 /* HHKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HHKeyboard-dummy.m"; sourceTree = "<group>"; };
-		3C9094DD20323C6C14CA0EADC4549BA4 /* HHKeyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HHKeyboard.modulemap; sourceTree = "<group>"; };
 		3E03E62CE1787D71494C814BDE2B2E00 /* Pods-HHKeyboard_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHKeyboard_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4353DFC42A8AF1B88789C334392D6B07 /* HHKeyboardMoreView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardMoreView.h; path = HHKeyboard/Classes/HHKeyboardMoreView.h; sourceTree = "<group>"; };
-		49323E9AFCCF2803876AA49EDAB853D5 /* HHKeyboardMoreItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardMoreItem.h; path = HHKeyboard/Classes/HHKeyboardMoreItem.h; sourceTree = "<group>"; };
+		3F412A3048F23E37E3A8674CF17A9354 /* HHKeyboardMoreItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardMoreItem.m; path = HHKeyboard/Classes/HHKeyboardMoreItem.m; sourceTree = "<group>"; };
+		40011D9A27431387A1070958FC05F539 /* HHBaseKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHBaseKeyboard.m; path = HHKeyboard/Classes/HHBaseKeyboard.m; sourceTree = "<group>"; };
+		497EB6D470FC6BA53179E5F2D342671A /* HHKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboard.h; path = HHKeyboard/Classes/HHKeyboard.h; sourceTree = "<group>"; };
 		4A0F7B2D8F504252BA1399D48D1F44A9 /* Pods-HHKeyboard_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HHKeyboard_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		50606342BC816BAF2D06CAE103A56673 /* HHKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboard.h; path = HHKeyboard/Classes/HHKeyboard.h; sourceTree = "<group>"; };
-		5A88CF22EA0233B86DFC782C6AF42A9A /* HHKeyboardTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardTextView.m; path = HHKeyboard/Classes/HHKeyboardTextView.m; sourceTree = "<group>"; };
-		5F063EC5784318EDE2326D25D6115B9F /* HHKeyboardHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardHelper.m; path = HHKeyboard/Classes/HHKeyboardHelper.m; sourceTree = "<group>"; };
-		60BA1725085EC8241A8A606A6E881B88 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		4C6F705475CF72334017D63EF0E62675 /* HHKeyboard.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HHKeyboard.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		56E52B61A66EE6AE978E284F9A4068EF /* HHKeyboardMoreCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardMoreCell.m; path = HHKeyboard/Classes/HHKeyboardMoreCell.m; sourceTree = "<group>"; };
+		5BDC43F082D73E2810C799C44EAA7FAA /* HHKeyboardFaceGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardFaceGroup.h; path = HHKeyboard/Classes/HHKeyboardFaceGroup.h; sourceTree = "<group>"; };
+		5C3804E83C2863CFB623C9BAA98771E2 /* HHKeyboardMoreView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardMoreView.h; path = HHKeyboard/Classes/HHKeyboardMoreView.h; sourceTree = "<group>"; };
+		5D1174218038781D1C10B00BD12F2D06 /* HHKeyboardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardView.m; path = HHKeyboard/Classes/HHKeyboardView.m; sourceTree = "<group>"; };
+		5E55149D16CD4F38FD9C587CF9CB9778 /* HHKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHKeyboard.debug.xcconfig; sourceTree = "<group>"; };
+		60132A970423E43A2A83E6A29B1B4D3C /* HHKeyboardFaceGroupCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardFaceGroupCell.m; path = HHKeyboard/Classes/HHKeyboardFaceGroupCell.m; sourceTree = "<group>"; };
 		6129E70096B1C73FFF6F4A54075B5433 /* Pods-HHKeyboard_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HHKeyboard_Example.modulemap"; sourceTree = "<group>"; };
-		695A8C1337B989F8317430B2B5CF8A13 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		6BC5A07342AAEF723C2364D40E323A77 /* UIButton+HHKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+HHKeyboard.h"; path = "HHKeyboard/Classes/UIButton+HHKeyboard.h"; sourceTree = "<group>"; };
-		727BACCB7BD0FB7B851AACAED22F3656 /* HHKeyboardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardView.m; path = HHKeyboard/Classes/HHKeyboardView.m; sourceTree = "<group>"; };
+		63A91B9AAE8544E90A02839C6E207235 /* HHKeyboardFaceGroupCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardFaceGroupCell.h; path = HHKeyboard/Classes/HHKeyboardFaceGroupCell.h; sourceTree = "<group>"; };
+		6638D188FB51CFF990E7936771994471 /* HHKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHKeyboard.release.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		75994E159516141CED462CA412644922 /* HHKeyboard */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HHKeyboard; path = HHKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7666FB1EEAEED6FD87F659A7D8E360E0 /* HHKeyboardTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardTextView.m; path = HHKeyboard/Classes/HHKeyboardTextView.m; sourceTree = "<group>"; };
+		771E803D4FA554D356450122CE64F42E /* HHKeyboardFaceCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardFaceCell.m; path = HHKeyboard/Classes/HHKeyboardFaceCell.m; sourceTree = "<group>"; };
 		7835E3DA7DC1DDA2ADA95F83219F2B78 /* Pods-HHKeyboard_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHKeyboard_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		785D2B74FC5EEA86CD4D2EC1D5FDED58 /* HHKeyboardFaceGroupCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardFaceGroupCell.h; path = HHKeyboard/Classes/HHKeyboardFaceGroupCell.h; sourceTree = "<group>"; };
+		78E7A0BFB1CA1974BE98BBF2B19CE0F3 /* UIColor+HHKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HHKeyboard.m"; path = "HHKeyboard/Classes/UIColor+HHKeyboard.m"; sourceTree = "<group>"; };
+		7A04184B3A3E62A283F9C398F0332FAF /* HHKeyboardFaceCategoryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardFaceCategoryView.h; path = HHKeyboard/Classes/HHKeyboardFaceCategoryView.h; sourceTree = "<group>"; };
+		7B332C0BF1682BEFFF46CFAC8AAE864F /* UIButton+HHKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+HHKeyboard.h"; path = "HHKeyboard/Classes/UIButton+HHKeyboard.h"; sourceTree = "<group>"; };
 		80DD9B5971FF374B2720200EECE930E5 /* HHKeyboard-HHKeyboard */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "HHKeyboard-HHKeyboard"; path = HHKeyboard.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		86BDFC46F7745A2DA7D0814119EB52E6 /* HHKeyboardFaceCategoryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardFaceCategoryView.h; path = HHKeyboard/Classes/HHKeyboardFaceCategoryView.h; sourceTree = "<group>"; };
-		878D6E5625EC9BB8D4767A62FCBC60A8 /* HHKeyboardFaceItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardFaceItem.m; path = HHKeyboard/Classes/HHKeyboardFaceItem.m; sourceTree = "<group>"; };
-		8C4AC29975313DB1345E2356EA6426EF /* HHKeyboardResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardResources.h; path = HHKeyboard/Classes/HHKeyboardResources.h; sourceTree = "<group>"; };
-		90E20119FB7E717C7340E697A6965E84 /* HHKeyboardFaceView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardFaceView.m; path = HHKeyboard/Classes/HHKeyboardFaceView.m; sourceTree = "<group>"; };
+		84D09DC7A2F347DC28E50D75E9B89A26 /* HHKeyboardFaceView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardFaceView.h; path = HHKeyboard/Classes/HHKeyboardFaceView.h; sourceTree = "<group>"; };
+		881B675AE862F3ABEBF814407A86B504 /* HHKeyboardFaceGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardFaceGroup.m; path = HHKeyboard/Classes/HHKeyboardFaceGroup.m; sourceTree = "<group>"; };
+		8BCE8D68A73510E64C5C3D62DDE1E730 /* HHFace.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = HHFace.bundle; path = HHKeyboard/Assets/HHFace.bundle; sourceTree = "<group>"; };
+		8D52E4E5B9328B7B6DF68C0819614552 /* UIColor+HHKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+HHKeyboard.h"; path = "HHKeyboard/Classes/UIColor+HHKeyboard.h"; sourceTree = "<group>"; };
+		8E4C92EC6C7814E5D10A98D99E3659A6 /* HHKeyboardFaceItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardFaceItem.m; path = HHKeyboard/Classes/HHKeyboardFaceItem.m; sourceTree = "<group>"; };
+		8E8C84CB41DD12177053212AD2BD544C /* HHBaseKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHBaseKeyboard.h; path = HHKeyboard/Classes/HHBaseKeyboard.h; sourceTree = "<group>"; };
+		91786BB9A0DAD49AB36F26E31F969D81 /* HHKeyboardHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardHelper.h; path = HHKeyboard/Classes/HHKeyboardHelper.h; sourceTree = "<group>"; };
 		92816C721122BBEDADD3B318A5F05C4F /* Pods-HHKeyboard_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHKeyboard_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		93DE249F3052A828F5508EB9EA58FAE5 /* Pods-HHKeyboard_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHKeyboard_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		95C7BCC272F8D3CB4898625259572418 /* HHKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHKeyboard.release.xcconfig; sourceTree = "<group>"; };
+		9554A0BBE1F3FFC8729282D70DC15DD4 /* HHKeyboard.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = HHKeyboard.xcassets; path = HHKeyboard/Assets/HHKeyboard.xcassets; sourceTree = "<group>"; };
 		95D451C2DE80391C830E9FADED3B81CC /* Pods-HHKeyboard_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HHKeyboard_Tests.modulemap"; sourceTree = "<group>"; };
-		9605E025858711034059626CABD5C025 /* HHKeyboardFaceGroupCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardFaceGroupCell.m; path = HHKeyboard/Classes/HHKeyboardFaceGroupCell.m; sourceTree = "<group>"; };
 		96F3247B9E8C04E300C7B2C1617FCF6B /* Pods-HHKeyboard_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HHKeyboard_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9A5BA289A28AB2B6FF0B381E9E535DEC /* HHKeyboardFaceCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardFaceCell.h; path = HHKeyboard/Classes/HHKeyboardFaceCell.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F4F7F880A5D3495029D1A760F024EE7 /* HHKeyboardMoreView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardMoreView.m; path = HHKeyboard/Classes/HHKeyboardMoreView.m; sourceTree = "<group>"; };
-		9F5793715E7EF32C4FD7829E9105DCDC /* UIColor+HHKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HHKeyboard.m"; path = "HHKeyboard/Classes/UIColor+HHKeyboard.m"; sourceTree = "<group>"; };
-		A0725E5EF25E1C9EFE8AB05D9DB8B829 /* HHKeyboard.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HHKeyboard.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AA63B300CFB4343DBD0940715B9111B2 /* HHBaseKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHBaseKeyboard.m; path = HHKeyboard/Classes/HHBaseKeyboard.m; sourceTree = "<group>"; };
-		AC78E02ED9748E1836D6D9E72D0CE6A3 /* UIWindow+HHKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+HHKeyboard.h"; path = "HHKeyboard/Classes/UIWindow+HHKeyboard.h"; sourceTree = "<group>"; };
-		B14AF6D481BE6AD09EB1F25B222FD977 /* HHKeyboardFaceGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardFaceGroup.h; path = HHKeyboard/Classes/HHKeyboardFaceGroup.h; sourceTree = "<group>"; };
-		B3B8A8FB7C5E9931761B016DF2E81A04 /* HHKeyboard.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = HHKeyboard.xcassets; path = HHKeyboard/Assets/HHKeyboard.xcassets; sourceTree = "<group>"; };
-		B936E544E88F2DFA6322B43358A14734 /* HHKeyboardMoreItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardMoreItem.m; path = HHKeyboard/Classes/HHKeyboardMoreItem.m; sourceTree = "<group>"; };
-		C65A365261D63C00EA6FA50AF4552328 /* HHBaseKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHBaseKeyboard.h; path = HHKeyboard/Classes/HHBaseKeyboard.h; sourceTree = "<group>"; };
-		D39C4EABBE23E435C33DE86E8B4C3675 /* UIWindow+HHKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+HHKeyboard.m"; path = "HHKeyboard/Classes/UIWindow+HHKeyboard.m"; sourceTree = "<group>"; };
-		D5FD89993D449CB9CF6E84ED98C3A0D9 /* HHKeyboardConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardConfiguration.h; path = HHKeyboard/Classes/HHKeyboardConfiguration.h; sourceTree = "<group>"; };
+		B490D428ED1EBAB44A0498AF8FA41A8D /* HHKeyboardMoreView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardMoreView.m; path = HHKeyboard/Classes/HHKeyboardMoreView.m; sourceTree = "<group>"; };
+		C6BDB229CEF2A0AAFA4C9275DC56C0BC /* HHKeyboardHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardHelper.m; path = HHKeyboard/Classes/HHKeyboardHelper.m; sourceTree = "<group>"; };
+		CC823CCF8F0A7A8293DE60EE05750F7C /* HHKeyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HHKeyboard.modulemap; sourceTree = "<group>"; };
+		CE18792C216843A8C141D250C25772FE /* HHKeyboardMoreItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardMoreItem.h; path = HHKeyboard/Classes/HHKeyboardMoreItem.h; sourceTree = "<group>"; };
 		D7F4604031BE1617E7F6896BFAA3C72E /* Pods-HHKeyboard_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HHKeyboard_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D97DBB238B610FC17BECBE2F0B996BB0 /* Pods-HHKeyboard_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HHKeyboard_Example-frameworks.sh"; sourceTree = "<group>"; };
-		E56661D93ECBCD4D20684F2093958D78 /* ResourceBundle-HHKeyboard-HHKeyboard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-HHKeyboard-HHKeyboard-Info.plist"; sourceTree = "<group>"; };
 		E66AD07DF28A9133FB67E75058338EE2 /* Pods-HHKeyboard_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHKeyboard_Tests-Info.plist"; sourceTree = "<group>"; };
+		E6E4370E71B169ABAAA04C558B91A598 /* HHKeyboardMoreCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardMoreCell.h; path = HHKeyboard/Classes/HHKeyboardMoreCell.h; sourceTree = "<group>"; };
 		EA3EBE7374D3617FCD254F27FF64033C /* Pods-HHKeyboard_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHKeyboard_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		ECC7DC17029D2D574E055225F0578E25 /* HHKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHKeyboard.debug.xcconfig; sourceTree = "<group>"; };
-		EDA8CFD59C6B4ED575E8897FBFE46936 /* UIButton+HHKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+HHKeyboard.m"; path = "HHKeyboard/Classes/UIButton+HHKeyboard.m"; sourceTree = "<group>"; };
-		F2E154472AF23C09F058A7A1F6716540 /* HHKeyboardHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardHelper.h; path = HHKeyboard/Classes/HHKeyboardHelper.h; sourceTree = "<group>"; };
-		F849741BB666A8A21AD071E4152DBD57 /* HHKeyboardFaceView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardFaceView.h; path = HHKeyboard/Classes/HHKeyboardFaceView.h; sourceTree = "<group>"; };
-		FA2B627329594F90267E6D2EDDB4861C /* HHKeyboardFaceCategoryView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardFaceCategoryView.m; path = HHKeyboard/Classes/HHKeyboardFaceCategoryView.m; sourceTree = "<group>"; };
+		F000E04545E2120B3E5866409AF98A2D /* HHKeyboardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardView.h; path = HHKeyboard/Classes/HHKeyboardView.h; sourceTree = "<group>"; };
+		F65251A6E488021AA8432A85F9694917 /* HHKeyboardResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHKeyboardResources.m; path = HHKeyboard/Classes/HHKeyboardResources.m; sourceTree = "<group>"; };
+		F7DD67440E29D88498D50940E3FD0A56 /* HHKeyboardTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardTextView.h; path = HHKeyboard/Classes/HHKeyboardTextView.h; sourceTree = "<group>"; };
+		F86F754CBBAD8E7FE1DF4A8A6E4FA430 /* HHKeyboardConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHKeyboardConfiguration.h; path = HHKeyboard/Classes/HHKeyboardConfiguration.h; sourceTree = "<group>"; };
 		FD69DF8EBD4858696B009F98BAF0D5E1 /* Pods-HHKeyboard_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HHKeyboard_Example"; path = Pods_HHKeyboard_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7FF9AED4A0F6D913724F5A29DE5B4A /* UIWindow+HHKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+HHKeyboard.h"; path = "HHKeyboard/Classes/UIWindow+HHKeyboard.h"; sourceTree = "<group>"; };
+		FE368D3DD94F1A79B66760EDA16993F4 /* HHKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HHKeyboard-dummy.m"; sourceTree = "<group>"; };
+		FF3361A4E39E43A8858D114AD7CB3139 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		FF4AAD66686564F548793C5F2C754557 /* HHKeyboard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HHKeyboard-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4E57BC61EF647D13F8F40C58B1952603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		872A9C03D529BDC4114182751D9A6312 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F725C6688BA1E74F60051263E652052B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4AA12CD3A564339B5AC642A24CF8789 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +193,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		023D06A339C6D5550BEF40F19511AB16 /* HHKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8E8C84CB41DD12177053212AD2BD544C /* HHBaseKeyboard.h */,
+				40011D9A27431387A1070958FC05F539 /* HHBaseKeyboard.m */,
+				497EB6D470FC6BA53179E5F2D342671A /* HHKeyboard.h */,
+				9554A0BBE1F3FFC8729282D70DC15DD4 /* HHKeyboard.xcassets */,
+				F86F754CBBAD8E7FE1DF4A8A6E4FA430 /* HHKeyboardConfiguration.h */,
+				34F96169FB08DF84799F46194FDD23E9 /* HHKeyboardConfiguration.m */,
+				7A04184B3A3E62A283F9C398F0332FAF /* HHKeyboardFaceCategoryView.h */,
+				15CAA7971D277814B2533E43800AD97A /* HHKeyboardFaceCategoryView.m */,
+				0B37134C6D3AB77CC6831493BC81C5BC /* HHKeyboardFaceCell.h */,
+				771E803D4FA554D356450122CE64F42E /* HHKeyboardFaceCell.m */,
+				5BDC43F082D73E2810C799C44EAA7FAA /* HHKeyboardFaceGroup.h */,
+				881B675AE862F3ABEBF814407A86B504 /* HHKeyboardFaceGroup.m */,
+				63A91B9AAE8544E90A02839C6E207235 /* HHKeyboardFaceGroupCell.h */,
+				60132A970423E43A2A83E6A29B1B4D3C /* HHKeyboardFaceGroupCell.m */,
+				33A94CB3BC53588B1D9C660B8F09CF47 /* HHKeyboardFaceItem.h */,
+				8E4C92EC6C7814E5D10A98D99E3659A6 /* HHKeyboardFaceItem.m */,
+				84D09DC7A2F347DC28E50D75E9B89A26 /* HHKeyboardFaceView.h */,
+				0437049171291583337587E260C027EC /* HHKeyboardFaceView.m */,
+				91786BB9A0DAD49AB36F26E31F969D81 /* HHKeyboardHelper.h */,
+				C6BDB229CEF2A0AAFA4C9275DC56C0BC /* HHKeyboardHelper.m */,
+				E6E4370E71B169ABAAA04C558B91A598 /* HHKeyboardMoreCell.h */,
+				56E52B61A66EE6AE978E284F9A4068EF /* HHKeyboardMoreCell.m */,
+				CE18792C216843A8C141D250C25772FE /* HHKeyboardMoreItem.h */,
+				3F412A3048F23E37E3A8674CF17A9354 /* HHKeyboardMoreItem.m */,
+				5C3804E83C2863CFB623C9BAA98771E2 /* HHKeyboardMoreView.h */,
+				B490D428ED1EBAB44A0498AF8FA41A8D /* HHKeyboardMoreView.m */,
+				2AC804D9565E8493EB0E436C0B7A2020 /* HHKeyboardResources.h */,
+				F65251A6E488021AA8432A85F9694917 /* HHKeyboardResources.m */,
+				F7DD67440E29D88498D50940E3FD0A56 /* HHKeyboardTextView.h */,
+				7666FB1EEAEED6FD87F659A7D8E360E0 /* HHKeyboardTextView.m */,
+				F000E04545E2120B3E5866409AF98A2D /* HHKeyboardView.h */,
+				5D1174218038781D1C10B00BD12F2D06 /* HHKeyboardView.m */,
+				7B332C0BF1682BEFFF46CFAC8AAE864F /* UIButton+HHKeyboard.h */,
+				18F799C528DAD2E3A104F72054D6A029 /* UIButton+HHKeyboard.m */,
+				8D52E4E5B9328B7B6DF68C0819614552 /* UIColor+HHKeyboard.h */,
+				78E7A0BFB1CA1974BE98BBF2B19CE0F3 /* UIColor+HHKeyboard.m */,
+				FD7FF9AED4A0F6D913724F5A29DE5B4A /* UIWindow+HHKeyboard.h */,
+				2EA882E21245C338BB991837359300FD /* UIWindow+HHKeyboard.m */,
+				1B6AA2727D1F9F8056424E31802D44AF /* Face */,
+				8577B979DAF321335886C32B1596603B /* Pod */,
+				3778B8B69D4CD9F537E0203DA3A2BB59 /* Support Files */,
+			);
+			name = HHKeyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		0529E6A82DAF655ECD93D1854727AD9E /* Pods-HHKeyboard_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +258,14 @@
 			path = "Target Support Files/Pods-HHKeyboard_Tests";
 			sourceTree = "<group>";
 		};
+		1B6AA2727D1F9F8056424E31802D44AF /* Face */ = {
+			isa = PBXGroup;
+			children = (
+				8BCE8D68A73510E64C5C3D62DDE1E730 /* HHFace.bundle */,
+			);
+			name = Face;
+			sourceTree = "<group>";
+		};
 		2A52A01F0B5BFABFD8B04443F4DF31EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,17 +277,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		37EDECBBB27D3BA6E4F2CCC3A1234F5B /* Support Files */ = {
+		3778B8B69D4CD9F537E0203DA3A2BB59 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3C9094DD20323C6C14CA0EADC4549BA4 /* HHKeyboard.modulemap */,
-				3B2D02D31510DB60A90EC82FD2D1EDA8 /* HHKeyboard-dummy.m */,
-				130EB22AC69C3121F347313BF267ED83 /* HHKeyboard-Info.plist */,
-				1A4A4A89E086F022F29C7677DE053F4C /* HHKeyboard-prefix.pch */,
-				2E2AF06F74D37DB0B9121A8FB733826C /* HHKeyboard-umbrella.h */,
-				ECC7DC17029D2D574E055225F0578E25 /* HHKeyboard.debug.xcconfig */,
-				95C7BCC272F8D3CB4898625259572418 /* HHKeyboard.release.xcconfig */,
-				E56661D93ECBCD4D20684F2093958D78 /* ResourceBundle-HHKeyboard-HHKeyboard-Info.plist */,
+				CC823CCF8F0A7A8293DE60EE05750F7C /* HHKeyboard.modulemap */,
+				FE368D3DD94F1A79B66760EDA16993F4 /* HHKeyboard-dummy.m */,
+				FF4AAD66686564F548793C5F2C754557 /* HHKeyboard-Info.plist */,
+				12E698C483986B6EAF2E80966D95D8CA /* HHKeyboard-prefix.pch */,
+				1A8D70C64E37629A2852518AE87A5394 /* HHKeyboard-umbrella.h */,
+				5E55149D16CD4F38FD9C587CF9CB9778 /* HHKeyboard.debug.xcconfig */,
+				6638D188FB51CFF990E7936771994471 /* HHKeyboard.release.xcconfig */,
+				22EA34715E7DA9317D55992F3DD9FB30 /* ResourceBundle-HHKeyboard-HHKeyboard-Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/HHKeyboard";
@@ -242,55 +299,6 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		6110311572850330F61E0D848398E189 /* HHKeyboard */ = {
-			isa = PBXGroup;
-			children = (
-				C65A365261D63C00EA6FA50AF4552328 /* HHBaseKeyboard.h */,
-				AA63B300CFB4343DBD0940715B9111B2 /* HHBaseKeyboard.m */,
-				0984B22A29A90740B5DD236C8E75BC56 /* HHFace.bundle */,
-				50606342BC816BAF2D06CAE103A56673 /* HHKeyboard.h */,
-				B3B8A8FB7C5E9931761B016DF2E81A04 /* HHKeyboard.xcassets */,
-				D5FD89993D449CB9CF6E84ED98C3A0D9 /* HHKeyboardConfiguration.h */,
-				2B4F68F3434E6B2CDDB0A654B85677DE /* HHKeyboardConfiguration.m */,
-				86BDFC46F7745A2DA7D0814119EB52E6 /* HHKeyboardFaceCategoryView.h */,
-				FA2B627329594F90267E6D2EDDB4861C /* HHKeyboardFaceCategoryView.m */,
-				9A5BA289A28AB2B6FF0B381E9E535DEC /* HHKeyboardFaceCell.h */,
-				32901B015127FDC08A6FF6CCECC5D7D2 /* HHKeyboardFaceCell.m */,
-				B14AF6D481BE6AD09EB1F25B222FD977 /* HHKeyboardFaceGroup.h */,
-				143D28DA9BD119053C1D0098DE9B8A66 /* HHKeyboardFaceGroup.m */,
-				785D2B74FC5EEA86CD4D2EC1D5FDED58 /* HHKeyboardFaceGroupCell.h */,
-				9605E025858711034059626CABD5C025 /* HHKeyboardFaceGroupCell.m */,
-				34317E48C238EEA2BBE2913EF8D68F2E /* HHKeyboardFaceItem.h */,
-				878D6E5625EC9BB8D4767A62FCBC60A8 /* HHKeyboardFaceItem.m */,
-				F849741BB666A8A21AD071E4152DBD57 /* HHKeyboardFaceView.h */,
-				90E20119FB7E717C7340E697A6965E84 /* HHKeyboardFaceView.m */,
-				F2E154472AF23C09F058A7A1F6716540 /* HHKeyboardHelper.h */,
-				5F063EC5784318EDE2326D25D6115B9F /* HHKeyboardHelper.m */,
-				0EBE098639066E2C5D280F612682F76D /* HHKeyboardMoreCell.h */,
-				1260E99366EFCE8C456D846F9242EB7A /* HHKeyboardMoreCell.m */,
-				49323E9AFCCF2803876AA49EDAB853D5 /* HHKeyboardMoreItem.h */,
-				B936E544E88F2DFA6322B43358A14734 /* HHKeyboardMoreItem.m */,
-				4353DFC42A8AF1B88789C334392D6B07 /* HHKeyboardMoreView.h */,
-				9F4F7F880A5D3495029D1A760F024EE7 /* HHKeyboardMoreView.m */,
-				8C4AC29975313DB1345E2356EA6426EF /* HHKeyboardResources.h */,
-				0CE626443C4068E115A3BF0B4C59DDE8 /* HHKeyboardResources.m */,
-				31FA3CD99EE8D9C11575521B7BA53000 /* HHKeyboardTextView.h */,
-				5A88CF22EA0233B86DFC782C6AF42A9A /* HHKeyboardTextView.m */,
-				1EBD735B7C6BD16A95F342DE811C3C95 /* HHKeyboardView.h */,
-				727BACCB7BD0FB7B851AACAED22F3656 /* HHKeyboardView.m */,
-				6BC5A07342AAEF723C2364D40E323A77 /* UIButton+HHKeyboard.h */,
-				EDA8CFD59C6B4ED575E8897FBFE46936 /* UIButton+HHKeyboard.m */,
-				375739763E564EB52F74E9DFC81B14D4 /* UIColor+HHKeyboard.h */,
-				9F5793715E7EF32C4FD7829E9105DCDC /* UIColor+HHKeyboard.m */,
-				AC78E02ED9748E1836D6D9E72D0CE6A3 /* UIWindow+HHKeyboard.h */,
-				D39C4EABBE23E435C33DE86E8B4C3675 /* UIWindow+HHKeyboard.m */,
-				894507CE78E50E14A29F07617E4D0BF7 /* Pod */,
-				37EDECBBB27D3BA6E4F2CCC3A1234F5B /* Support Files */,
-			);
-			name = HHKeyboard;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		6BA9C037EA752BE93541305B8444C9D0 /* Pods-HHKeyboard_Example */ = {
@@ -310,12 +318,12 @@
 			path = "Target Support Files/Pods-HHKeyboard_Example";
 			sourceTree = "<group>";
 		};
-		894507CE78E50E14A29F07617E4D0BF7 /* Pod */ = {
+		8577B979DAF321335886C32B1596603B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				A0725E5EF25E1C9EFE8AB05D9DB8B829 /* HHKeyboard.podspec */,
-				60BA1725085EC8241A8A606A6E881B88 /* LICENSE */,
-				695A8C1337B989F8317430B2B5CF8A13 /* README.md */,
+				4C6F705475CF72334017D63EF0E62675 /* HHKeyboard.podspec */,
+				30F056960D52504949E33084A6B7EAE6 /* LICENSE */,
+				FF3361A4E39E43A8858D114AD7CB3139 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -323,7 +331,7 @@
 		8D130C4D3ACE9D4BD6D1A6EE32DEAFC7 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6110311572850330F61E0D848398E189 /* HHKeyboard */,
+				023D06A339C6D5550BEF40F19511AB16 /* HHKeyboard */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -417,7 +425,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0092824F7666806CD47986514FBCD129 /* PBXTargetDependency */,
+				5979E915FF79888A61019C38E8799AC6 /* PBXTargetDependency */,
 			);
 			name = HHKeyboard;
 			productName = HHKeyboard;
@@ -426,11 +434,11 @@
 		};
 		33F6BFFAAE0A93E6D7354882F560A012 /* HHKeyboard-HHKeyboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF43E0EB7D6D082055E924BBB291CC8F /* Build configuration list for PBXNativeTarget "HHKeyboard-HHKeyboard" */;
+			buildConfigurationList = 7A258FA7B2752A35C76A16A46D591168 /* Build configuration list for PBXNativeTarget "HHKeyboard-HHKeyboard" */;
 			buildPhases = (
-				4EA66A1026BEFB73E28F80C21D22A383 /* Sources */,
-				D4AA12CD3A564339B5AC642A24CF8789 /* Frameworks */,
-				036705132CAAF9A49D45E02DFC14E66E /* Resources */,
+				4B5480B9DE5A9AD6CA8751A9776F418C /* Sources */,
+				4E57BC61EF647D13F8F40C58B1952603 /* Frameworks */,
+				7BDDD03C7C5619A67319D73FFC7ACACE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -453,7 +461,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				044203182E4435BFCF39113916B1B54F /* PBXTargetDependency */,
+				C4BDBC7DCFCD35C3D1A1B260B23F916C /* PBXTargetDependency */,
 			);
 			name = "Pods-HHKeyboard_Example";
 			productName = Pods_HHKeyboard_Example;
@@ -472,7 +480,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				75A9B2EE827925A881ECEBDA8793BC21 /* PBXTargetDependency */,
+				41B356739C72696FDA55BD0719F8AE62 /* PBXTargetDependency */,
 			);
 			name = "Pods-HHKeyboard_Tests";
 			productName = Pods_HHKeyboard_Tests;
@@ -510,18 +518,18 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		036705132CAAF9A49D45E02DFC14E66E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B66C37D8DA45456EFF022A7A3377FA6 /* HHKeyboard.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		557E040764997F3347D48AE0523C8B92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BDDD03C7C5619A67319D73FFC7ACACE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E8AA7BA8442585B0C39CB0B2D298007 /* HHKeyboard.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,7 +552,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4EA66A1026BEFB73E28F80C21D22A383 /* Sources */ = {
+		4B5480B9DE5A9AD6CA8751A9776F418C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -596,43 +604,27 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0092824F7666806CD47986514FBCD129 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "HHKeyboard-HHKeyboard";
-			target = 33F6BFFAAE0A93E6D7354882F560A012 /* HHKeyboard-HHKeyboard */;
-			targetProxy = 93423152069B904EEFB18E6B6F6F4475 /* PBXContainerItemProxy */;
-		};
-		044203182E4435BFCF39113916B1B54F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HHKeyboard;
-			target = 1FB00A699953F3885D439095A7BE3DAE /* HHKeyboard */;
-			targetProxy = A7653504D2310F6258EF3FAEEB23F519 /* PBXContainerItemProxy */;
-		};
-		75A9B2EE827925A881ECEBDA8793BC21 /* PBXTargetDependency */ = {
+		41B356739C72696FDA55BD0719F8AE62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-HHKeyboard_Example";
 			target = 4BAEE109F1E2FD3601B3BCDC9C89DA18 /* Pods-HHKeyboard_Example */;
-			targetProxy = D3298034AEC7C2AB6FD994FF98864097 /* PBXContainerItemProxy */;
+			targetProxy = 8A1C80B2DC8F2226FDDDF592DE45882C /* PBXContainerItemProxy */;
+		};
+		5979E915FF79888A61019C38E8799AC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "HHKeyboard-HHKeyboard";
+			target = 33F6BFFAAE0A93E6D7354882F560A012 /* HHKeyboard-HHKeyboard */;
+			targetProxy = 102C3290C7C3CF55A179DC7DCC03B950 /* PBXContainerItemProxy */;
+		};
+		C4BDBC7DCFCD35C3D1A1B260B23F916C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HHKeyboard;
+			target = 1FB00A699953F3885D439095A7BE3DAE /* HHKeyboard */;
+			targetProxy = AAEC1C8A02C2CEAE812B4963017A1086 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03A1576584615971C9C7E217E943F30B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95C7BCC272F8D3CB4898625259572418 /* HHKeyboard.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HHKeyboard";
-				IBSC_MODULE = HHKeyboard;
-				INFOPLIST_FILE = "Target Support Files/HHKeyboard/ResourceBundle-HHKeyboard-HHKeyboard-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = HHKeyboard;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -701,7 +693,7 @@
 		};
 		285AAFDC990F10E40F421E6A740328C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95C7BCC272F8D3CB4898625259572418 /* HHKeyboard.release.xcconfig */;
+			baseConfigurationReference = 6638D188FB51CFF990E7936771994471 /* HHKeyboard.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -729,22 +721,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		4C9A1C765C145117CC575485C20D2A50 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECC7DC17029D2D574E055225F0578E25 /* HHKeyboard.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HHKeyboard";
-				IBSC_MODULE = HHKeyboard;
-				INFOPLIST_FILE = "Target Support Files/HHKeyboard/ResourceBundle-HHKeyboard-HHKeyboard-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = HHKeyboard;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 		55CFF8D60BF77F8E99AA1E1F29DD8C45 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -811,9 +787,41 @@
 			};
 			name = Debug;
 		};
+		797A0DD53B8F39DD6AEB3B24B77F0791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6638D188FB51CFF990E7936771994471 /* HHKeyboard.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HHKeyboard";
+				IBSC_MODULE = HHKeyboard;
+				INFOPLIST_FILE = "Target Support Files/HHKeyboard/ResourceBundle-HHKeyboard-HHKeyboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = HHKeyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		89070E84FDFC2DAC9A8F52C1FCE52AB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E55149D16CD4F38FD9C587CF9CB9778 /* HHKeyboard.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HHKeyboard";
+				IBSC_MODULE = HHKeyboard;
+				INFOPLIST_FILE = "Target Support Files/HHKeyboard/ResourceBundle-HHKeyboard-HHKeyboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = HHKeyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		BAD8A21D30F910C3F6416AD44310C79A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECC7DC17029D2D574E055225F0578E25 /* HHKeyboard.debug.xcconfig */;
+			baseConfigurationReference = 5E55149D16CD4F38FD9C587CF9CB9778 /* HHKeyboard.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -989,11 +997,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF43E0EB7D6D082055E924BBB291CC8F /* Build configuration list for PBXNativeTarget "HHKeyboard-HHKeyboard" */ = {
+		7A258FA7B2752A35C76A16A46D591168 /* Build configuration list for PBXNativeTarget "HHKeyboard-HHKeyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C9A1C765C145117CC575485C20D2A50 /* Debug */,
-				03A1576584615971C9C7E217E943F30B /* Release */,
+				89070E84FDFC2DAC9A8F52C1FCE52AB8 /* Debug */,
+				797A0DD53B8F39DD6AEB3B24B77F0791 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
