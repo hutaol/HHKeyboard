@@ -32,6 +32,7 @@ typedef NS_ENUM(NSInteger, HHKeyboardVoiceState) {
 @protocol HHKeyboardViewDelegate <NSObject>
 
 @optional
+
 /// 高度改变
 /// @param keyboard HHKeyboardView
 /// @param height 高度
@@ -47,7 +48,6 @@ typedef NS_ENUM(NSInteger, HHKeyboardVoiceState) {
 /// @param state 录音状态
 - (void)keyboard:(HHKeyboardView *)keyboard voiceState:(HHKeyboardVoiceState)state;
 
-
 /// 除含有 @ 字符的委托（比如删除 @xxx）
 /// @param keyboard HHKeyboardView
 /// @param text atText
@@ -56,7 +56,6 @@ typedef NS_ENUM(NSInteger, HHKeyboardVoiceState) {
 /// 输入含有 @ 字符的委托
 /// @param keyboard HHKeyboardView
 - (void)keyboardDidInputAt:(HHKeyboardView *)keyboard;
-
 
 /// 发送文本消息时的回调委托
 /// @param keyboard HHKeyboardView
@@ -81,9 +80,10 @@ typedef NS_ENUM(NSInteger, HHKeyboardVoiceState) {
 /// 最大高度
 @property (nonatomic, assign) CGFloat maxHeight;
 
-// 当前键盘状态
+/// 当前键盘状态
 @property (nonatomic, assign) HHKeyboardState currentState;
 
+/// 赋值有效，更改属性无效
 @property (nonatomic, strong) HHKeyboardConfiguration *configuration;
 
 - (void)setText:(NSString *)text;
@@ -92,15 +92,17 @@ typedef NS_ENUM(NSInteger, HHKeyboardVoiceState) {
 /// 收起键盘
 - (void)dismissKeyboard;
 
-/// 重置Frame，以输入框和self.superview.frame做为标准
-/// 添加后作为聊天框时最好设置，展示在底部的输入框
-- (void)resetFrame;
-
-/// 配置布局，父视图尺寸改变时，可用于屏幕选中
+/// 配置布局，展示在底部的输入框，父视图尺寸改变时，可用于初始化设置布局，屏幕旋转
 /// @param size 父视图尺寸
 - (void)configLayout:(CGSize)size;
 
+/// 设置Frame，以输入框和self.superview.frame做为标准
+/// 添加后设置布局，展示在底部的输入框
+- (void)setFrameToBottom;
+
+/// 设置更多
 - (void)setMoreItems:(NSMutableArray <HHKeyboardMoreItem *> *)items;
+/// 设置表情
 - (void)setFaceGroups:(NSMutableArray <HHKeyboardFaceGroup *> *)groups;
 
 @end

@@ -14,8 +14,6 @@
 #import "UIButton+HHKeyboard.h"
 #import "UIColor+HHKeyboard.h"
 
-#define kHorizenSpace            10.f   // 水平间隔
-#define kVerticalSpace           8.f    // 垂直间隔
 #define kAnimateDuration         0.25   // 动画间隔
 
 @interface HHKeyboardView () <UITextViewDelegate, HHKeyboardDelegate, HHKeyboardFaceViewDelegate, HHKeyboardMoreViewDelegate>
@@ -93,11 +91,7 @@
     _maxHeight = 112.f;
     
     [self setupUI];
-    
-    _textViewHeight = _initialHeight;
-
-    [self defautLayout];
-    
+        
     self.configuration = [[HHKeyboardConfiguration alloc] init];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChange:) name:UIKeyboardWillShowNotification object:nil];
@@ -119,40 +113,49 @@
 
 - (void)defautLayout {
     
+    CGFloat horizontalSpace = self.configuration.horizontalSpace;
+    CGFloat verticalSpace = self.configuration.verticalSpace;
+    
+    CGFloat itemWidth = MIN(ceil(kVoiceImage.size.width), _initialHeight);
+    CGFloat itemSpace = (_initialHeight - itemWidth) / 2;
+    
+    
     CGFloat width = self.frame.size.width - [HHKeyboardHelper kb_safeAreaInset].left - [HHKeyboardHelper kb_safeAreaInset].right;
 
-    self.textViewWidth = width - (5 * kHorizenSpace ) - (3 * _initialHeight);
+    self.textViewWidth = width - (5 * horizontalSpace ) - (3 * itemWidth);
     CGFloat vHeight = self.textViewHeight;
     if (self.currentState == HHKeyboardStateVoice) {
         vHeight = _initialHeight;
     }
     
+    CGFloat itemY = verticalSpace + (vHeight - itemWidth - itemSpace);
+
     if (self.showVoice) {
-        self.voiceButton.frame = CGRectMake(kHorizenSpace + [HHKeyboardHelper kb_safeAreaInset].left, vHeight + kVerticalSpace - _initialHeight, _initialHeight, _initialHeight);
+        self.voiceButton.frame = CGRectMake(horizontalSpace + [HHKeyboardHelper kb_safeAreaInset].left, itemY, itemWidth, itemWidth);
     } else {
         self.voiceButton.frame = CGRectZero;
-        self.textViewWidth += (_initialHeight + kHorizenSpace);
+        self.textViewWidth += (itemWidth + horizontalSpace);
     }
 
     if (self.showMore) {
-        self.moreButton.frame = CGRectMake(width + [HHKeyboardHelper kb_safeAreaInset].left - kHorizenSpace - _initialHeight, vHeight + kVerticalSpace - _initialHeight, _initialHeight, _initialHeight);
+        self.moreButton.frame = CGRectMake(width + [HHKeyboardHelper kb_safeAreaInset].left - horizontalSpace - itemWidth, itemY, itemWidth, itemWidth);
     } else {
         self.moreButton.frame = CGRectZero;
-        self.textViewWidth += (_initialHeight + kHorizenSpace);
+        self.textViewWidth += (itemWidth + horizontalSpace);
     }
 
     if (self.showFace) {
         if (self.showMore) {
-            self.faceButton.frame = CGRectMake(width + [HHKeyboardHelper kb_safeAreaInset].left - (kHorizenSpace + _initialHeight) * 2, vHeight + kVerticalSpace - _initialHeight, _initialHeight, _initialHeight);
+            self.faceButton.frame = CGRectMake(width + [HHKeyboardHelper kb_safeAreaInset].left - (horizontalSpace + itemWidth) * 2, itemY, itemWidth, itemWidth);
         } else {
-            self.faceButton.frame = CGRectMake(width + [HHKeyboardHelper kb_safeAreaInset].left - kHorizenSpace - _initialHeight, vHeight + kVerticalSpace - _initialHeight, _initialHeight, _initialHeight);
+            self.faceButton.frame = CGRectMake(width + [HHKeyboardHelper kb_safeAreaInset].left - horizontalSpace - itemWidth, itemY, itemWidth, itemWidth);
         }
     } else {
         self.faceButton.frame = CGRectZero;
-        self.textViewWidth += (_initialHeight + kHorizenSpace);
+        self.textViewWidth += (itemWidth + horizontalSpace);
     }
     
-    self.textView.frame = CGRectMake(CGRectGetMaxX(self.voiceButton.frame) + kHorizenSpace, kVerticalSpace, self.textViewWidth, self.textViewHeight);
+    self.textView.frame = CGRectMake(CGRectGetMaxX(self.voiceButton.frame) + horizontalSpace, verticalSpace, self.textViewWidth, self.textViewHeight);
 
     self.recordButton.frame = CGRectMake(CGRectGetMinX(self.textView.frame), CGRectGetMinY(self.textView.frame), self.textView.frame.size.width, _initialHeight);
     
@@ -212,7 +215,7 @@
     [self defautLayout];
 }
 
-- (void)resetFrame {
+- (void)setFrameToBottom {
     CGFloat height = [self p_textBarHeight] + [HHKeyboardHelper kb_bottomSafeHeight];
     self.frame = CGRectMake(0, self.superview.frame.size.height - height, self.superview.frame.size.width, height);
     [self defautLayout];
@@ -391,11 +394,11 @@
 }
 
 - (CGFloat)p_textBarHeight {
-    return self.textView.frame.size.height + 2 * kVerticalSpace;
+    return self.textView.frame.size.height + 2 * self.configuration.verticalSpace;
 }
 
 - (void)p_resetVoice {
-    CGFloat height = _initialHeight + 2 * kVerticalSpace + [HHKeyboardHelper kb_bottomSafeHeight];
+    CGFloat height = _initialHeight + 2 * self.configuration.verticalSpace + [HHKeyboardHelper kb_bottomSafeHeight];
     CGRect rect = self.frame;
     rect.size.height = height;
     rect.origin.y = self.superview.frame.size.height - height;
@@ -658,8 +661,9 @@
     self.topLineView.backgroundColor = configuration.lineColor;
     
     self.textView.backgroundColor = configuration.inputColor;
-    
     self.textView.layer.borderColor = configuration.borderColor.CGColor;
+    self.textView.font = configuration.textFont;
+    self.textView.textContainerInset = configuration.textContainerInset;
     
     self.recordButton.layer.borderColor = configuration.borderColor.CGColor;
     [self.recordButton setTitleColor:configuration.textColor forState:UIControlStateNormal];
@@ -667,9 +671,12 @@
     [self.recordButton setTitle:configuration.recordTitle forState:UIControlStateNormal];
     [self.recordButton setTitle:configuration.recordHLTitle forState:UIControlStateHighlighted];
     
-    self.textView.font = configuration.textFont;
     self.recordButton.titleLabel.font = configuration.textFont;
+    
     _initialHeight = ceilf([self.textView sizeThatFits:CGSizeMake(0, MAXFLOAT)].height);
+    
+    _textViewHeight = _initialHeight;
+
     [self defautLayout];
 
 }
@@ -680,7 +687,7 @@
     if (!_textView) {
         _textView = [[HHKeyboardTextView alloc] init];
         _textView.delegate = self;
-        _initialHeight = ceilf([self.textView sizeThatFits:CGSizeMake(0, MAXFLOAT)].height);
+        _initialHeight = ceilf([_textView sizeThatFits:CGSizeMake(0, MAXFLOAT)].height);
     }
     return _textView;
 }

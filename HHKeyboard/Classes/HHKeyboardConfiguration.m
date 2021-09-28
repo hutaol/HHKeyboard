@@ -26,8 +26,13 @@
         
         _textFont = [UIFont systemFontOfSize:17];
         
+        _textContainerInset = UIEdgeInsetsMake(10.f, 9.f, 9.f, 10.f);
+        
         _recordTitle = @"按住 说话";
         _recordHLTitle = @"松开 结束";
+        
+        _horizontalSpace = 10.f;
+        _verticalSpace = 8.f;
         
     }
     return self;

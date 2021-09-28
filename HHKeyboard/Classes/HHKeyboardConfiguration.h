@@ -22,8 +22,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UIFont *textFont;
 
+@property (nonatomic, assign) UIEdgeInsets textContainerInset;
+
 @property (nonatomic, copy) NSString *recordTitle;
 @property (nonatomic, copy) NSString *recordHLTitle;
+
+/// 水平间距
+@property (nonatomic, assign) CGFloat horizontalSpace;
+/// 垂直间距
+@property (nonatomic, assign) CGFloat verticalSpace;
 
 @end
 

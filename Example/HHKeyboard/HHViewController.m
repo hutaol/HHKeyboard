@@ -22,21 +22,17 @@
 
 @implementation HHViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-//    self.tableView.backgroundColor = [UIColor blueColor];
+    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+
     self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
 
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     [self.view addSubview:self.tableView];
-
-    [self.view addSubview:self.keyboardView];
-    [self.keyboardView resetFrame];
-    [self updateTableViewInsets];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"暗黑模式" style:UIBarButtonItemStylePlain target:self action:@selector(onClickDark)];
     
@@ -45,6 +41,34 @@
     for (int i = 0; i < 10; i ++) {
         [self.data addObject:[NSString stringWithFormat:@"标题 %d", i]];
     }
+    
+    [self addKeyboardView];
+    
+}
+
+- (void)addKeyboardView {
+    _keyboardView = [[HHKeyboardView alloc] init];
+    _keyboardView.delegate = self;
+
+    // 相关配置
+    HHKeyboardConfiguration *config = [[HHKeyboardConfiguration alloc] init];
+    config.textFont = [UIFont systemFontOfSize:18];
+    _keyboardView.configuration = config;
+    
+    // 更多Item
+    HHKeyboardMoreItem *itemPhoto = [HHKeyboardMoreItem moreItemWithType:0 title:@"相机" image:[UIImage imageNamed:@"chat_more_icons_photo"]];
+    HHKeyboardMoreItem *itemCamera = [HHKeyboardMoreItem moreItemWithType:1 title:@"拍摄" image:[UIImage imageNamed:@"chat_more_icons_camera"]];
+
+    NSMutableArray *more = @[itemPhoto, itemCamera].mutableCopy;
+    [_keyboardView setMoreItems:more];
+
+    // 配置布局，展示在底部的输入框
+    [_keyboardView configLayout:self.view.frame.size];
+
+    [self.view addSubview:_keyboardView];
+    
+    [self updateTableViewInsets];
+
 }
 
 - (void)onClickDark {
@@ -66,18 +90,9 @@
 }
 
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
-    if (size.width > size.height) { // 横屏
-        // 横屏布局
-    } else {
-        // 竖屏布局
-    }
-    
     [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
-        
         [self.keyboardView configLayout:size];
-        
     } completion:nil];
-    
 }
 
 #pragma mark --
@@ -122,7 +137,7 @@
     UIEdgeInsets insets = UIEdgeInsetsMake(0.f, 0.f, bottom, 0.f);
     self.tableView.contentInset = insets;
     self.tableView.scrollIndicatorInsets = insets;
-//    [self scrollToBottom:YES];
+//    [self scrollToBottom];
 }
 
 - (void)scrollToBottom:(BOOL)animate {
@@ -133,20 +148,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.keyboardView dismissKeyboard];
-}
-
-- (HHKeyboardView *)keyboardView {
-    if (!_keyboardView) {
-        _keyboardView = [[HHKeyboardView alloc] init];
-//        _keyboardView.showFace = NO;
-//        _keyboardView.showVoice = YES;
-//        _keyboardView.showMore = YES;
-        _keyboardView.delegate = self;
-        HHKeyboardMoreItem *item = [HHKeyboardMoreItem moreItemWithType:0 title:@"相机" image:nil];
-        NSMutableArray *more = @[item, item, item, item, item, item, item, item, item, item].mutableCopy;
-        [_keyboardView setMoreItems:more];
-    }
-    return _keyboardView;
 }
 
 @end
